@@ -1,0 +1,41 @@
+body {
+    background-color: #0B0C10;
+    padding: 3vh 3vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: #66FCF1;
+}
+
+div.section {
+    border-radius: 10px;
+    background-color: #1F2833;
+    min-height: 75vh;
+    max-height: 91vh;
+    color: #E5E5E5;
+    padding: 8vh 8vw;
+    display: grid;
+}
+
+.nav {
+    grid-row: 1;
+    text-align: end;
+}
+
+.header {
+    grid-row: 2;
+    color: #66FCF1;
+}
+
+.content {
+    grid-row: 3;
+    font-size: large;
+    line-height: 1.6;
+}
+
+.chevronDown {
+    grid-row: 4;
+    text-align: center;
+    align-self: end;
+}
