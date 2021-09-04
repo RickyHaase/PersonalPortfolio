@@ -42,5 +42,3 @@ function fadeIn(a, b){
     elementA.classList.remove('hidden');
     elementB.classList.remove('hidden');
 }
-
-window.scrollTo(0, 1); 
