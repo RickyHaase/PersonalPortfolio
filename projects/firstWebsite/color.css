@@ -1,0 +1,11 @@
+body { background-color: #1a75ff; color: #ffffff; 
+	font-family: sans-serif; }
+h1 { background-color: #000000; color: #4d94ff;
+	font-family: Verdana, Arial, sans-serif; }
+b { font-family: Verdana; }
+h2 { font-family: Verdana; }
+footer { color: #000000; }
+nav { background-color: #ffffff }
+table { border-collapse: collapse; }
+table, td, th { border: 3px solid black; }
+td { padding: 5px; text-align: center; }

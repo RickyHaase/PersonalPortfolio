@@ -1,36 +1,29 @@
-let codeA = "document.getElementById('aboutMe').appendChild(content);";
-let codeB = "fadeIn(content);";
+let code = "fadeIn(content);";
 let i = 0;
 let writeCode = setInterval(function(){
-    if (i < codeB.length){
-        document.getElementById('introCode').appendChild(document.createTextNode(codeB.charAt(i)));
+    if (i < code.length){
+        // Writes the string one character at a time at the defined interval to the page
+        document.getElementById('introCode').appendChild(document.createTextNode(code.charAt(i)));
         i++;
     }else{
-        clearInterval(writeCode);
         // console.log('exited loop')
+        clearInterval(writeCode);
         setTimeout(function(){
-            // console.log('next function')
+            // fade out the written message
             fadeOut()
             setTimeout(function(){
-                // console.log('next function')
-                addContent()
-                fadeIn('aboutHeader', 'aboutContent')
+                // remove written message from DOM before fading in header and content
+                let introCode = document.getElementById('introCode');
+                introCode.parentNode.removeChild(introCode);
+                fadeIn('aboutHeader', 'aboutContent');
                 setTimeout(function(){
-                    // console.log('next function')
+                    // fade in the nav and page down buttons
                     fadeIn('nav', 'nextPage')
                }, 1500);
            }, 1000);
        }, 500);
     }
 }, 100);
-
-function addContent(){
-    let header = document.createTextNode('Hello World');
-    let text = 'My name is Ricky and I am fairly new to this whole web development thing. That being said, I’ve got a number of projects under my belt, each one exponentially better than the last. I have what I feel to be a good base knowledge of the field and great problem solving/research skills that allow me to find a solution for nearly any problem. Take a look at some of my projects below:';
-
-    document.getElementById('aboutHeader').appendChild(header);
-    document.getElementById('aboutContent').innerHTML = text;
-}
 
 function fadeOut(){
     let introCode = document.getElementById('introCode');

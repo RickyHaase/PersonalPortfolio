@@ -1,0 +1,152 @@
+* { /* attributes applied to the whole web page*/
+    font-family: 'Roboto', sans-serif; /* Seclects the font to be used from externally linked Google fonts CSS sheet*/
+}
+
+html, body {
+    background-color: rgb(218, 218, 218); /*sets the background for the whole document*/
+}
+
+div.header{
+    background-color: rgba(45,45,45,0.98); /*header background color*/
+    color: white; /* Changes the color of the text in the header*/
+    font-size: 2.7em; /* Changes the size of the text in the header*/
+    text-align: center; /*centers header text*/
+    position: sticky; /* Keeps the header at the top even while scrolling*/
+    top: 0; /*positions header at the top of the page*/
+    z-index:3; /* Keeps the header from being hidden behind other elements while scrolling*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.74); /*Adds a shadow to the element*/
+    font-weight: 300;
+}
+
+/*W3 Schools taught me how to set up a Nav Bar like this*/
+
+ul.sidenav {
+    list-style-type: none; /* Removes default style attributes from list elements*/
+    margin: 0; /*allows the nav bar to be right up against other elements (and the edge of the window)*/
+    padding: 0; /*allows the content within the nav bar to push up to the edge of the nav bar*/
+    width: 10%; /*Restricts the nav bar to only the left 10% of the screen*/
+    background-color: rgba(45,45,45,0.98);
+    position: fixed; /*fixes position of the nav bar so that it doesnt move from the left side of the screen*/
+    height: 100%; /*Sets the nav bar to span the whole height of the scree*/
+    overflow: auto; /*allows the nav bar to become scrollable if the height of the window is too short*/
+    text-align: center; /*Centers the text within the nav bar (horozontally)*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.479); /*Adds a shadow to the element*/
+}
+
+ul.sidenav li a { 
+    display: block; /*Sets the list elements (and the links) as blocks (that are clickable because of the "a" attribute)*/
+    color: white; /*Sets the text color*/
+    padding: 10px 5px; /*Sets padding within the block elements so that the text within has some space to breath*/
+    text-decoration: none; /*Removes the decoration and other attributes from the links (Links have wierd attributes like being blue and underlined and changing color after that site has been visited. That is all gone now)*/
+    font-size: 1vw; /*Changes the font size but also makes it responsive so that as the nav bar changes size, the text can also change size so that it doesn't get cut off*/
+    border-top: 1px  solid black; /*Sets a border along the top of each element. This seperates them visually*/
+}
+
+ul.sidenav form{
+    border-top: 1px  solid black; /*Sets a border along the top of each element. This seperates them visually*/
+    border-bottom: 1px  solid black; /*Sets a border along the top of each element. This seperates them visually*/
+    text-align: center; /*Centers the text within the nav bar (horozontally)*/
+    color: white; /*Sets the text color*/
+    padding: 5px 0 0 0;
+    font-size: 1vw; /*Changes the font size but also makes it responsive so that as the nav bar changes size, the text can also change size so that it doesn't get cut off*/
+    padding: 5px 0 0 0;
+}
+
+ul.sidenav li a:hover { /*Changes the attributes of the Nav bar links they are hovered over*/
+    background-color: rgba(70, 70, 70, 0.98);
+    color: white; /*Sets the text color*/
+}
+
+div.content {
+    
+    margin-left: 10%; /*Sets the content container so that it doesn't interfere with the nav bar*/
+    padding: 30px; /*Creates padding so that content within the element are not up agiainst the side of the element*/
+    height: 100%; /*sets element to span the entire height of the window*/
+    column-count: 2; /*splits the content within the div into two seperate columns*/
+    column-gap: 50px; /*seperates the two columns so that they aren't right up against eachother*/
+}
+
+div.embed-responsive{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.479); /*Adds a shadow to the element*/
+}
+
+div.body-text {
+    color: black; /*Sets the text color*/
+    font-size: 1.3em; /*Sets font size*/
+}
+
+div.body-text p{
+    display:inline-block; /*Forces the whole element to remain inside the same column rather than being split up over two columns*/
+}
+
+table{
+    border-collapse: collapse; /*Sets the table border to collapse into a single border*/
+    width: 100%; /*Sets the table to span the whole width of the column*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.479); /*Adds a shadow to the element*/
+  }
+
+table caption{
+    text-align: center; /*Centers the caption text (horozontally)*/
+    color: black; /*Sets the text color*/
+    caption-side:top; /*Sets the caption to be above the table*/
+    font-size: 1.5em; /*Sets font size*/
+    font-weight: 200; /*Sets the font weight heavier than default*/
+    text-decoration: underline black; /*Creates an underline of the caption text*/
+}
+  
+table,tr,td{
+    border: 2px solid black; /*Creates and styles the border for the table*/
+    color: black; /*Sets the text color*/
+    text-align: center; /*Centers the text within the table (horozontally)*/
+    padding: 10px; /*Adds padding to the table so the border isn't up against the text*/
+  }
+
+  @media screen and (max-width: 950px) { /*Changes the following attributes when the width of the window is less than 950 pixels*/
+    
+    ul.sidenav { 
+        width: 100%; /*Changes the width of the nav bar to take up the whole width of the screen*/
+        height: auto; /*Changes the height of the Nav Bar so that it only takes up what it needs*/
+        position: relative; /*Adjusts the position of the nav bar so it can be scrolled past and the content underneath can be viewed*/
+    }
+  
+    ul.sidenav li a {
+        font-size: 1em; /*Font size change because the 1.3vw is too small on this screen size*/
+        padding: 8px; /*Changes the padding so that the nav bar boxes aren't too big*/
+    }
+  
+    div.content {
+        margin-left: 0; /*sets the content so that it can span the whole screen instead of having an empty space to the left*/
+        column-count: 1; /*Changes the multicolumn layout to only one column of content*/
+    }
+
+    ul.sidenav form {
+        font-size: 1em; /*Font size change because the 1.3vw is too small on this screen size*/
+    }
+}
+
+@media only screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) { /*Applies this layout to high DPI devices that are in portrait orientation (Usually mobile devices)*/    
+
+    html, body{
+        zoom:150%; /*zoom makes everything big enough high dpi displays*/
+    }
+    
+    ul.sidenav { 
+        width: 100%; /*Changes the width of the nav bar to take up the whole width of the screen*/
+        height: auto; /*Changes the height of the Nav Bar so that it only takes up what it needs*/
+        position: relative; /*Adjusts the position of the nav bar so it can be scrolled past and the content underneath can be viewed*/
+    }
+  
+    ul.sidenav li a {
+        font-size: 1em; /*Font size change because the 1.3vw is too small on this screen size*/
+        padding: 8px; /*Changes the padding so that the nav bar boxes aren't too big*/
+    }
+  
+    div.content {
+        margin-left: 0; /*sets the content so that it can span the whole screen instead of having an empty space to the left*/
+        column-count: 1; /*Changes the multicolumn layout to only one column of content*/
+    }
+
+    ul.sidenav form {
+        font-size: 1em; /*Font size change because the 1.3vw is too small on this screen size*/
+    }
+}

@@ -12,33 +12,54 @@ h1{
     text-align: center;
 }
 
-p {
-
+section {
+    border-radius: 0;
+    margin: 0;
+    padding: 4vh 8vw;
+    height: 92vh;
 }
 
 /* Classes */
-div.section {
-    border-radius: 0;
-    margin: 0;
-    height: 84vh;
-    overflow-x: hidden;
-}
-
 .nav {
     text-align: center;
 }
 
-.content {
+.item {
+    padding: 0 5vw;
+    scroll-snap-align: center;
+}
 
+.columns3 {
+    /* display: inline; */
+    grid-auto-flow: unset;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.columns4 {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* IDs */
-#aboutMe {
-
+#projects {
+    padding: 4vh 0;
 }
 
-#projects {
+#footer {
+    height: 92vh;
+}
 
+/* Horozontal Scrolling Containers */
+.hs {
+    grid-auto-columns: calc(55vw + 40px);
+    grid-template-rows: minmax(60vh, 60vh);
+    scroll-snap-type: x mandatory;
+    grid-template-columns: 15vw;
+}
+
+.hs:before,
+.hs:after {
+    content: '';
+    width: 15vw;
 }
 
 /* Adjustments for smaller mobile devices */
@@ -49,7 +70,7 @@ div.section {
 }
 
 @media screen and (max-width:320px)  {
-    div.section {
+    section {
         line-height: 1.3;
     }
 }

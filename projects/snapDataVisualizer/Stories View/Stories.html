@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Stories View</title>
+    <link rel="icon" href="#" type="image/gif" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../Assets/MainView.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+</head>
+
+<body>
+    <div class="header">Snapchat Stories Data</div>
+
+    <ul class="sidenav">
+        <li><a href="../Location View/Location.html">Location</a></li>
+        <li><a href="../Communication View/Communication.html">Communication</a></li>
+        <li><a href="../Profile View/Profile.html">Profile</a></li>
+        <li><a href="../History View/History.html">History</a></li>
+        <li><a href="../Stories View/Stories.html">Stories</a></li>
+        <li><a href="../Memories View/Memories.html">Memories</a></li>
+    </ul>
+
+    <div class="infoPane">
+        <div class="info">
+            <h3>Information on Stories Data</h3>
+            <p>The first chart (views) describes what stories you have viewed in the past month. Stories indicates how many times you've clicked on the user's stories while Snaps and Videos indicates how many of each media type was included in those stories (some stories are made up of 3 videos or 1 snap, etc.)</p>
+            <p>The second chart (Analytics) shows how many views and replies your stories recieved on each given day throughout the month.</p>
+            <p>Below the charts, you can see what discover channels you have viewed or are subscribed to.</p>
+            <div class="buttons">
+                <a href="../index.html">
+                    <button onclick="localStorage.clear()">Clear Data and Exit</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class = "bar1">
+            <canvas id="viewsChart"></canvas>
+        </div>
+        <div class = "bar2">
+            <canvas id="analyticsChart" style="display:none;"></canvas>
+        </div>
+        <div class="buttons">
+            <button type="button" id="btn1" onclick="switchChart(1);" style="background: lightgrey;">Views</button>
+            <button type="button" id="btn2" onclick="switchChart(2);">Analytics</button>
+        </div>
+
+        <div class="expandableLists" style="padding-top: 10px;">
+            <details>
+               <summary id="subs">Subscriptions</summary>
+            </details>
+            <details>
+               <summary id="channelViews">Discover Channels Viewed</summary>
+            </details>
+        </div>
+
+        <script src="Story.js"></script>
+    </div>
+</body>
+
+</html>

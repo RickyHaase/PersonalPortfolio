@@ -1,0 +1,92 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+	margin: 0;
+    height: 100%;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: rgba(45,45,45,0.98);
+    color:white;
+    font-size: 3vw;
+    padding:5px;
+    text-align: center;
+    font-weight: -50;
+}
+
+.container {
+    width:100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+a:link { 
+    text-decoration: none
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none; 
+}
+
+.container > a {
+    color: black;
+    font-size: 1.5vw;
+    transition: ls ease-out;
+    border-radius: 10px;
+    
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    text-align: center;
+   
+}
+
+.container > a:nth-child(1){background-color: rgb(218, 218, 218); border: 4px solid #0088CF;}
+.container > a:nth-child(2){background-color: rgb(218, 218, 218); border: 4px solid #FF5800;}
+.container > a:nth-child(3){background-color: rgb(218, 218, 218); border: 4px solid #6d251f;}
+.container > a:nth-child(4){background-color: rgb(218, 218, 218); border: 4px solid #a3704c;}
+.container > a:nth-child(5){background-color: rgb(218, 218, 218); border: 4px solid rgba(0, 0, 0, 0.842);}
+
+
+
+@media screen and (orientation:portrait) { /*Sets page layout for mobile*/
+
+	.container {
+        flex-direction: column;
+        width:90%;
+        height: 90%;
+        margin: 0 2.5%;
+    }
+
+    .container > a {
+        color: black;
+        font-size: 1.5em;
+        border-radius: 10px;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+        text-align: center;
+       
+    }
+
+    header{
+        font-size:2em;
+        width:100%;
+        padding:10px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+	.container {
+        margin: 0 0;
+    }
+}
