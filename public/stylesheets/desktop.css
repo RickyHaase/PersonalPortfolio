@@ -1,34 +1,42 @@
 /* Elements */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  /* overflow: auto; */
+}
+
 body {
   background-color: #0b0c10;
   font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  /* scroll-snap-type: y mandatory; */
 }
 
 section {
-  border-radius: 10px;
+  border-radius: 5vh;
+  border: #0b0c10 solid 4vh;
   background-color: #1f2833;
-  height: 78vh;
+  height: 100vh;
   color: #e5e5e5;
   padding: 8vh 8vw;
   display: grid;
   line-height: 1.6;
-  margin: 3vh;
+  scroll-snap-align: start;
 }
 
 p {
-  font-size: large;
+  font-size: 1.2em;
 }
 
 h1 {
   color: #66fcf1;
-  margin: 0;
+  font-size: 2.2em;
 }
 
-h2{
-  font-size: large;
-  margin-bottom: 0;
+h2 {
+  font-size: 1.5em;
+  /* font-weight: normal; */
+  margin-top: 20px;
 }
 
 a {
@@ -36,14 +44,18 @@ a {
 }
 
 ul {
-  margin-top: 0;
+  padding-left: 30px;
+  font-size: 1.2em;
 }
 
-/* body section.section {
-  scroll-snap-align: start;
-} */
-
 /* Classes */
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
 .nav {
   grid-row: 1;
   text-align: end;
@@ -61,6 +73,7 @@ ul {
 
 .chevronUp {
   grid-row: 1;
+  
   text-align: center;
   align-self: start;
 }
@@ -71,15 +84,12 @@ ul {
 
 .columns3 {
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
   grid-auto-flow: column;
   grid-auto-columns: auto;
 }
 
 .columns4 {
   display: grid;
-  /* grid-auto-flow: column;
-  grid-auto-columns: auto; */
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -89,27 +99,30 @@ ul {
 
 /* IDs */
 #project1 {
-  background: linear-gradient(135deg, rgba(26, 117, 255, 0.8) 0%, rgba(0, 0, 255, 0) 100%), linear-gradient(360deg, #5AF280 0%, rgba(0, 255, 0, 0) 100%), linear-gradient(225deg, #FF4D4D 0%, rgba(255, 0, 0, 0) 100%);
+  background: linear-gradient(135deg, rgba(26, 117, 255, 0.8) 0%, rgba(0, 0, 255, 0) 100%),
+    linear-gradient(360deg, #5af280 0%, rgba(0, 255, 0, 0) 100%),
+    linear-gradient(225deg, #ff4d4d 0%, rgba(255, 0, 0, 0) 100%);
 }
 
 #project2 {
-  background: linear-gradient(44.15deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 98.56%), linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(315deg, #B0B0B0 0%, rgba(176, 176, 176, 0) 100%);
+  background: linear-gradient(44.15deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 98.56%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(315deg, #b0b0b0 0%, rgba(176, 176, 176, 0) 100%);
 }
 
 #project3 {
-  background: linear-gradient(270deg, rgba(75, 192, 192, 0.6) 0%, rgba(75, 192, 192, 0) 100%), linear-gradient(0deg, rgba(255, 99, 133, 0.6) 0%, rgba(255, 99, 133, 0) 100%), linear-gradient(180deg, rgba(54, 163, 235, 0.6) 0%, rgba(54, 163, 235, 0) 100%), linear-gradient(90deg, rgba(255, 160, 64, 0.6) 0%, rgba(255, 160, 64, 0) 100%), #DADADA;
+  background: linear-gradient(270deg, rgba(75, 192, 192, 0.6) 0%, rgba(75, 192, 192, 0) 100%),
+    linear-gradient(0deg, rgba(255, 99, 133, 0.6) 0%, rgba(255, 99, 133, 0) 100%),
+    linear-gradient(180deg, rgba(54, 163, 235, 0.6) 0%, rgba(54, 163, 235, 0) 100%),
+    linear-gradient(90deg, rgba(255, 160, 64, 0.6) 0%, rgba(255, 160, 64, 0) 100%), #dadada;
 }
 
 #project4 {
-  background: #173E34;
+  background: #173e34;
 }
 
 #footer {
   height: fit-content;
-}
-
-#links {
-  /* text-align: center; */
 }
 
 /* Horozontal scrolling containers */
@@ -132,7 +145,6 @@ ul {
   border-radius: 10px;
   padding: 0 1vw;
   overflow: scroll;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); */
 }
 
 .hs:before,
@@ -155,7 +167,7 @@ ul {
 }
 
 .fade-out {
-  animation: fadeOut ease 1s;
+  animation: fadeOut ease 0.5s;
 }
 @keyframes fadeOut {
   0% {

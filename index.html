@@ -1,205 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" media="screen" href="./public/stylesheets/desktop.css">
-    <link rel="stylesheet" media="screen and (max-width: 425px)" href="./public/stylesheets/mobile.css">
+    <link rel="stylesheet" media="screen" href="./public/stylesheets/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 425px)" href="./public/stylesheets/mobile.css" />
     <script src="./public/javascripts/index.js"></script>
-</head>
-<body>
-    <section class="" id="aboutMe">
+  </head>
+  <body>
+    <div class="container">
+      <section class="" id="aboutMe">
         <div class="nav hidden" id="nav">
-            <a href="#footer">Contact</a>
-            <a href="#skills">Skills</a>
-            <a href="./public/assets/Richard_Haase_Resume.pdf" target="_blank">Resume</a>
+          <a href="#footer">Contact</a>
+          <a href="#skills">Skills</a>
+          <a href="./public/assets/Richard_Haase_Resume.pdf" target="_blank">Resume</a>
         </div>
         <div class="content">
-            <p id="introCode"></p>
-            <h1 id="aboutHeader" class="hidden">Hello World</h1>
-            <p id="aboutContent" class="hidden">My name is Ricky and I am fairly new to this whole web development thing. That being said, I’ve got a number of projects under my belt, each one exponentially better than the last. I have what I feel to be a good base knowledge of the field and great problem solving/research skills that allow me to find a solution for nearly any problem. Take a look at some of my projects below:</p>
+          <p id="introCode"></p>
+          <h1 id="aboutHeader" class="hidden">Hello World</h1>
+          <p id="aboutContent" class="hidden">
+            My name is Ricky and I am fairly new to this whole web development thing. That being said, I’ve got a number
+            of projects under my belt, each one exponentially better than the last. I have what I feel to be a good base
+            knowledge of the field and great problem solving/research skills that allow me to find a solution for nearly
+            any problem. Take a look at some of my projects below:
+          </p>
         </div>
         <div class="chevronDown">
-            <a href="#projects" class="hidden" id="nextPage">
-                <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section">
-            </a>
+          <a href="#projects" class="hidden" id="nextPage">
+            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+          </a>
         </div>
-    </section>
+      </section>
 
-    <section class="" id="projects">
+      <section class="" id="projects">
         <div class="chevronUp">
-            <a href="#aboutMe">
-                <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section">
-            </a>
+          <a href="#aboutMe">
+            <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
+          </a>
         </div>
-
         <div class="content grid">
-            <h1>Projects</h1>
-
-            <div class="hs">
-                <div class="item" id="project1">
-                    <h2>First Website</h2>
-                    <ul>
-                        <li>Made in Highschool for CSEC-102</li>
-                        <li>Basic HTML and minimal CSS</li>
-                        <li>Absolutely atrocious</li>
-                        <li><a href="./projects/firstWebsite/home.html" target="_blank">link to live site</a></li>
-                    </ul>
-                </div>
-                <div class="item" id="project2">
-                    <h2>Web Design Midterm</h2>
-                    <ul>
-                        <li>Made during freshman year at Univeristy</li>
-                        <li>Purely HTML and CSS with use of flexbox, iframes, and @media controls for a responsive design</li>
-                        <li><a href="./projects/webDesignMidterm/Homepage/Homepage.html" target="_blank">link to live site</a></li>
-                    </ul>
-                </div>
-                <div class="item" id="project3">
-                    <h2>Snapchat Data Visualizer</h2>
-                    <ul>
-                        <li>Junior year at University</li>
-                        <li>Lots of vanilla JS (ES6) with use of chartsJS library</li>
-                        <li>All data processing is handled in the front-end as to avoid sending a user’s sensitive snapchat data and storing it on a server (also I had no idea about backend web development at the time so I used a simple file-server architecture)</li>
-                        <li><a href="./projects/snapDataVisualizer/index.html" target="_blank">link to live site</a></li>
-                    </ul>
-                </div>
-                <div class="item" id="project4">
-                    <h2>Customer Web Portal</h2>
-                    <ul>
-                        <li>Project for internship between Junior and Senior years at university</li>
-                        <li>Server-side rendering, dynamic HTML Forms, Bootstrap, MS-SQL, nodeJS, expressJS, passportJS, nodemailer, jQuery, etc.</li>
-                        <li>Integrated with an existing order management system’s database, created an authentication system with session-based authentication, dynamic HTML web forms with email-based submission</li>
-                        <li><a href="#project4">No live site available, it is proprietary property of the company who paid me to create it.</a></li>
-                    </ul>
-                </div>
+          <h1>Projects</h1>
+          <div class="hs">
+            <div class="item" id="project1">
+              <h2>First Website</h2>
+              <ul>
+                <li>Made in Highschool for CSEC-102</li>
+                <li>Basic HTML and minimal CSS</li>
+                <li>Absolutely atrocious</li>
+              </ul>
             </div>
-        </div>
-
-        <div class="chevronDown">
-            <a href="#skills">
-                <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section">
-            </a>
-        </div>
-    </section>
-
-    <section class="" id="skills">
-        <div class="chevronUp">
-            <a href="#projects">
-                <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section">
-            </a>
-        </div>
-
-        <div class="content">
-            <h1>Technologies</h1>
-            <p>Here are some of the technologies with which I am familiar:</p>
-
-            <div class="columns4">
-                <div>
-                    <h2>Languages</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>JavaScript</li>
-                        <li>CSS</li>
-                        <li>SQL</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Frameworks</h2>
-                    <ul>
-                        <li>Bootstrap</li>
-                        <li>jQuery</li>
-                        <li>expressJS</li>
-                        <li>passportJS</li>
-                        <li>chartsJS</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Platforms</h2>
-                    <ul>
-                        <li>Windows</li>
-                        <li>MacOS</li>
-                        <li>node.js</li>
-                        <li>Linux</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Software & Services</h2>
-                    <ul>
-                        <li>VS Code</li>
-                        <li>GitHub</li>
-                    </ul>
-                </div>
+            <div class="item" id="project2">
+              <h2>Web Design Midterm</h2>
+              <ul>
+                <li>Made during freshman year at Univeristy</li>
+                <li>Purely HTML and CSS with use of flexbox, iframes, and @media controls for a responsive design</li>
+              </ul>
             </div>
+            <div class="item" id="project3">
+              <h2>Snapchat Data Visualizer</h2>
+              <ul>
+                <li>Junior year at University</li>
+                <li>Lots of vanilla JS (ES6) with use of chartsJS library</li>
+                <li>
+                  All data processing is handled in the front-end as to avoid sending a user’s sensitive snapchat data
+                  and storing it on a server (also I had no idea about backend web development at the time so I used a
+                  simple file-server architecture)
+                </li>
+              </ul>
+            </div>
+            <div class="item" id="project4">
+              <h2>Customer Web Portal</h2>
+              <ul>
+                <li>Project for internship between Junior and Senior years at university</li>
+                <li>
+                  Server-side rendering, dynamic HTML Forms, Bootstrap, MS-SQL, nodeJS, expressJS, passportJS,
+                  nodemailer, jQuery, etc.
+                </li>
+                <li>
+                  Integrated with an existing order management system’s database, created an authentication system with
+                  session-based authentication, dynamic HTML web forms with email-based submission
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
         <div class="chevronDown">
-            <a href="#experience">
-                <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section">
-            </a>
+          <a href="#skills">
+            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+          </a>
         </div>
-    </section>
+      </section>
 
-    <section class="" id="experience">
+      <section class="" id="skills">
         <div class="chevronUp">
-            <a href="#skills">
-                <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section">
-            </a>
+          <a href="#projects">
+            <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
+          </a>
         </div>
-
         <div class="content">
-            <h1>Experience</h1>
-            <h2>Education</h2>
-            <ul>
-                <li>Campbell Univeristy - BS in IT Management and BS in Information Security - 2018-2021</li>
-            </ul>
-
-            <h2>Field-related experience</h2>
-            <ul>
-                <li>Arzberger Stationers - Web Developer - Summer Internship 2021, Part time remote Fall 2021</li>
-                <li>SIM International - IT Consultant - Summer 2020</li>
-                <li>Campbell University - Teacher’s Assistant for Web Design - Spring 2020</li>
-                <li>Campbell University - A/V Technician - Fall 2018</li>
-            </ul>
+          <h1>Technologies</h1>
+          <p>Here are some of the technologies with which I am familiar:</p>
+          <div class="columns4">
+            <div>
+              <h2>Languages</h2>
+              <ul>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>SQL</li>
+                <li>Java</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Frameworks</h2>
+              <ul>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>expressJS</li>
+                <li>passportJS</li>
+                <li>chartsJS</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Platforms</h2>
+              <ul>
+                <li>Windows</li>
+                <li>MacOS</li>
+                <li>node.js</li>
+                <li>Linux</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Software & Services</h2>
+              <ul>
+                <li>VS Code</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+          </div>
         </div>
-
         <div class="chevronDown">
-            <a href="#footer">
-                <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section">
-            </a>
+          <a href="#experience">
+            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+          </a>
         </div>
-    </section>
+      </section>
 
-    <section id="footer">
-        <a href="http://haasedev.com" target="_blank" style="align-self: center;"><h1>Haase Dev</h1></a>
+      <section class="" id="experience">
+        <div class="chevronUp">
+          <a href="#skills">
+            <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
+          </a>
+        </div>
+        <div class="content">
+          <h1>Experience</h1>
+          <h2>Education</h2>
+          <ul>
+            <li>Campbell Univeristy - BS in IT Management and BS in Information Security - 2018-2021</li>
+          </ul>
+          <h2>Field-related experience</h2>
+          <ul>
+            <li>Arzberger Stationers - Web Developer - Summer Internship 2021, Part time remote Fall 2021</li>
+            <li>SIM International - IT Consultant - Summer 2020</li>
+            <li>Campbell University - Teacher’s Assistant for Web Design - Spring 2020</li>
+            <li>Campbell University - A/V Technician - Fall 2018</li>
+          </ul>
+        </div>
+        <div class="chevronDown">
+          <a href="#footer">
+            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+          </a>
+        </div>
+      </section>
+
+      <section id="footer">
+        <a href="#aboutMe" style="align-self: center"><h1>Haase Dev</h1></a>
         <div class="columns3">
-            <div id="contact">
-                <h2>Contact</h2>
-                <p><a href="tel:+18032430256">
-                        <img width="15" src="./public/images/phone-solid.svg" alt="LinkedIn">
-                        +1 (803) 243-0256</a>
-                </p>
-                <a href="mailto:ricky@rickyh.dev">
-                    <img width="15" src="./public/images/envelope-regular.svg" alt="LinkedIn">
-                    ricky@rickyh.dev
-                </a>
-            </div>
-            <div id="links">
-                <h2>Links</h2>
-                <a class="mx-5" href="https://www.linkedin.com/in/richard-haase-8218701a0" target="_blank"><img width="32" src="./public/images/linkedin-in-brands.svg" alt="LinkedIn"></a>
-                <a class="mx-5" href="https://github.com/RickyHaase" target="_blank"><img width="32" src="./public/images/github-brands.svg" alt="GitHub"></a>
-                <a class="mx-5" href="./public/assets/Richard_Haase_Resume.pdf" target="_blank"><img width="32" src="./public/images/file-pdf-regular.svg" alt="Resume"></a>
-            </div>
-            <div id="footerProjects">
-                <h2>Projects</h2>
-                <p>
-                    <a href="./projects/firstWebsite/home.html" target="_blank">First Website</a><br>
-                    <a href="./projects/webDesignMidterm/Homepage/Homepage.html" target="_blank">Web Design Midterm</a><br>
-                    <a href="./projects/snapDataVisualizer/index.html" target="_blank">Snapchat Data Visualizer</a>
-                </p>
-            </div>
+          <div id="contact">
+            <h2>Contact</h2>
+            <p>
+              <a href="tel:+15555555555">
+                <img width="15" src="./public/images/phone-solid.svg" alt="LinkedIn" />
+                +1 (555) 555-5555</a
+              >
+            </p>
+            <a href="mailto:ricky@example.com">
+              <img width="15" src="./public/images/envelope-regular.svg" alt="LinkedIn" />
+              ricky@example.com
+            </a>
+          </div>
+          <div id="links">
+            <h2>Links</h2>
+            <a class="mx-5" href="https://www.linkedin.com/in/richard-haase-8218701a0" target="_blank"
+              ><img width="32" src="./public/images/linkedin-in-brands.svg" alt="LinkedIn"
+            /></a>
+            <a class="mx-5" href="https://github.com/RickyHaase" target="_blank"
+              ><img width="32" src="./public/images/github-brands.svg" alt="GitHub"
+            /></a>
+            <a class="mx-5" href="./public/assets/Richard_Haase_Resume.pdf" target="_blank"
+              ><img width="32" src="./public/images/file-pdf-regular.svg" alt="Resume"
+            /></a>
+          </div>
+          <div id="footerProjects">
+            <h2>Projects</h2>
+            <p>
+              <a href="./projects/firstWebsite/home.html" target="_blank">First Website</a><br />
+              <a href="./projects/webDesignMidterm/Homepage/Homepage.html" target="_blank">Web Design Midterm</a><br />
+              <a href="./projects/snapDataVisualizer/index.html" target="_blank">Snapchat Data Visualizer</a>
+            </p>
+          </div>
         </div>
-    </section>
-</body>
+      </section>
+    </div>
+  </body>
 </html>
