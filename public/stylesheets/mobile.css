@@ -31,7 +31,6 @@ section {
 }
 
 .columns3 {
-  /* display: inline; */
   grid-auto-flow: unset;
   grid-template-columns: repeat(1, 1fr);
 }
