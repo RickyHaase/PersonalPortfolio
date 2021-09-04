@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  /* -webkit-overflow-scrolling: touch; */
   /* overflow: auto; */
 }
 
@@ -138,14 +138,14 @@ ul {
   grid-auto-flow: column;
   grid-auto-columns: calc(40vh + 40px);
   grid-template-rows: minmax(40vh, 40vh);
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .item {
   background-color: white;
   border-radius: 10px;
   padding: 0 1vw;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .hs:before,

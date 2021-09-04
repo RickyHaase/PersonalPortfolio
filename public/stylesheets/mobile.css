@@ -15,9 +15,8 @@ h1 {
 section {
   border-radius: 0;
   border: none;
-  border-bottom: black solid 100px;
   margin: 0;
-  padding: 4vh 8vw;
+  padding: 4vh 8vw 10vh 8vw;
   height: 100vh;
 }
 
@@ -41,9 +40,13 @@ section {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.chevronDown, .chevronUp {
+  display: none;
+}
+
 /* IDs */
 #projects {
-  padding: 4vh 0;
+  padding: 4vh 0 10vh 0;
 }
 
 #footer {
