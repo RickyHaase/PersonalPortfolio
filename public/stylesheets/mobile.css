@@ -15,6 +15,7 @@ h1 {
 section {
   border-radius: 0;
   border: none;
+  border-bottom: black solid 50px;
   margin: 0;
   padding: 4vh 8vw;
   height: 100vh;
