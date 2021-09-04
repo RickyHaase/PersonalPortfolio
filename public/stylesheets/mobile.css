@@ -1,0 +1,55 @@
+/* Elements */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    padding: 3vw;
+}
+
+h1{
+    text-align: center;
+}
+
+p {
+
+}
+
+/* Classes */
+div.section {
+    border-radius: 0;
+    margin: 0;
+    height: 84vh;
+    overflow-x: hidden;
+}
+
+.nav {
+    text-align: center;
+}
+
+.content {
+
+}
+
+/* IDs */
+#aboutMe {
+
+}
+
+#projects {
+
+}
+
+/* Adjustments for smaller mobile devices */
+@media screen and (max-width:360px)  {
+    p {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:320px)  {
+    div.section {
+        line-height: 1.3;
+    }
+}

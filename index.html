@@ -2,26 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="./public/stylesheets/index.css">
+    <link rel="stylesheet" media="screen" href="./public/stylesheets/desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 425px)" href="./public/stylesheets/mobile.css">
     <script src="./public/javascripts/index.js"></script>
 </head>
 <body>
-    <div class="section">
-        <div class="nav">
+    <div class="section" id="aboutMe">
+        <div class="nav hidden" id="nav">
             <a href="#">Contact</a>
             <a href="#">Skills</a>
             <a href="#">Resume</a>
         </div>
-        <div class="header">
-            <h1>Hello World</h1>
-        </div>
         <div class="content">
-            <p>My name is Ricky and I am fairly new to this whole web development thing. That being said, I’ve got a number of projects under my belt, each one exponentially better than the last. I have what I feel to be a good base knowledge of the field and great problem solving/research skills that allow me to find a solution for nearly any problem. Take a look at some of my projects below:</p>
+            <p id="introCode"></p>
+            <h1 id="aboutHeader" class="hidden"></h1>
+            <p id="aboutContent" class="hidden"></p>
         </div>
         <div class="chevronDown">
+            <a href="#" class="hidden" id="nextPage">
+                <img width="25vw" src="./public/images/chevron-down-solid.svg">
+            </a>
+        </div>
+    </div>
+    <div class="section" class="projects">
+        <div class="chevronUp">
             <a href="#">
-                <img width="25vw"  src="./public/images/chevron-down-solid.svg">
+                <img width="25vw" src="./public/images/chevron-up-solid.svg">
+            </a>
+        </div>
+
+        <div class="chevronDown">
+            <a href="#">
+                <img width="25vw" src="./public/images/chevron-down-solid.svg">
             </a>
         </div>
     </div>

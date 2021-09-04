@@ -1,0 +1,85 @@
+/* Elements */
+body {
+  background-color: #0b0c10;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+
+a {
+  color: #66fcf1;
+}
+
+h1 {
+  color: #66fcf1;
+}
+
+p {
+  font-size: large;
+}
+
+/* Classes */
+div.section {
+  border-radius: 10px;
+  background-color: #1f2833;
+  min-height: 78vh;
+  max-height: 91vh;
+  color: #e5e5e5;
+  padding: 8vh 8vw;
+  display: grid;
+  line-height: 1.6;
+  margin: 3vh 3vw;
+}
+
+.nav {
+  grid-row: 1;
+  text-align: end;
+}
+
+.content {
+  grid-row: 2;
+}
+
+.chevronDown {
+  grid-row: 3;
+  text-align: center;
+  align-self: end;
+}
+
+.chevronUp {
+  grid-row: 1;
+  text-align: center;
+  align-self: start;
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut ease 1s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* IDs */
+#projects {
+  /* margin-top: 8vh; */
+}
