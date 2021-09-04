@@ -16,7 +16,7 @@ section {
   border-radius: 0;
   border: none;
   margin: 0;
-  padding: 4vh 8vw 10vh 8vw;
+  padding: 10vh 8vw;
   height: 100vh;
 }
 
@@ -44,9 +44,13 @@ section {
   display: none;
 }
 
+.content {
+  grid-row: auto;
+}
+
 /* IDs */
 #projects {
-  padding: 4vh 0 10vh 0;
+  padding: 10vh 0;
 }
 
 #footer {
