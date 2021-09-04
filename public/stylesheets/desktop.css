@@ -54,8 +54,6 @@ ul {
   width: 100%;
   overflow: auto;
   scroll-snap-type: y mandatory;
-
-  height: calc(var(--vh, 1vh) * 100);
 }
 
 .nav {
