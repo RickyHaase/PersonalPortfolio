@@ -12,6 +12,10 @@ h1 {
   text-align: center;
 }
 
+ul {
+  font-size: medium;
+}
+
 section {
   border-radius: 0;
   border: none;

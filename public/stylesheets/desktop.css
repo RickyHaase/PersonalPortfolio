@@ -1,3 +1,18 @@
+/* Color Palletes
+Dark:
+-Background: #0b0c10
+-Section Background: #1f2833
+-Accent: #66fcf1
+-Font: #e5e5e5
+
+Light:
+-Background: #fff
+-Section Background: #bbb
+-Accent: #00a9ba
+-Font: #1a1a1a
+
+*/
+
 /* Elements */
 * {
   box-sizing: border-box;
@@ -5,12 +20,14 @@
   margin: 0;
   scroll-behavior: smooth;
   /* -webkit-overflow-scrolling: touch; */
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* font-family: "Lucida Console", Monaco, monospace; */
 }
 
 body {
   background-color: #0b0c10;
   font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
 }
 
 section {
@@ -47,6 +64,10 @@ a {
 ul {
   padding-left: 30px;
   font-size: 1.2em;
+}
+
+li {
+  /* overflow: visible; */
 }
 
 /* Classes */
@@ -98,6 +119,18 @@ ul {
   margin: 0 5px;
 }
 
+.projectLink {
+  /* position: absolute;
+  bottom: 10px;
+  right: -10px; */
+  /* vertical-align: bottom;
+  justify-self: right; */
+  align-self: flex-end;
+  margin-top: auto;
+  padding-bottom: 0.7vw;
+  cursor: pointer;
+}
+
 /* IDs */
 #project1 {
   background: linear-gradient(135deg, rgba(26, 117, 255, 0.8) 0%, rgba(0, 0, 255, 0) 100%),
@@ -136,16 +169,19 @@ ul {
   grid-gap: 30px;
   grid-template-columns: 10px;
   grid-auto-flow: column;
-  grid-auto-columns: calc(40vh + 40px);
-  grid-template-rows: minmax(40vh, 40vh);
+  grid-auto-columns: calc(50vw + 40px);
+  grid-template-rows: minmax(50vh, 50vh);
   overflow-x: auto;
 }
 
 .item {
   background-color: white;
   border-radius: 10px;
-  padding: 0 1vw;
+  padding: 0 2vw;
   overflow: auto;
+  display: inline-flex;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .hs:before,
@@ -177,4 +213,166 @@ ul {
   100% {
     opacity: 0;
   }
+}
+
+/* Project Windows */
+
+/* The Modal (w3 Schools) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border-radius: 15px;
+  width: 80%;
+  height: 95%;
+}
+
+/* (https://codepen.io/JohJakob/pen/YPxgwo) */
+.titlebar {
+  background-color: rgb(39,41,42);
+  height: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: #b1b2b4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3px;
+}
+
+.siteShowcase {
+  overflow: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  height: calc(100% - 25px);
+}
+
+.buttons {
+  padding-left: 8px;
+}
+
+.minimize {
+  background: #ffbd4c;
+  font-size: 9pt;
+  line-height: 11px;
+  margin-left: 4px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #e09e3e;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.zoom {
+  background: #00ca56;
+  font-size: 9pt;
+  line-height: 11px;
+  margin-left: 6px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #14ae46;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Slideshow (w3 Schools)*/
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+  height: calc(100% - 25px);
+  overflow-y: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.slideImage {
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }

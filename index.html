@@ -49,8 +49,9 @@
             <ul>
               <li>Made in Highschool for CSEC-102</li>
               <li>Basic HTML and minimal CSS</li>
-              <li>Absolutely atrocious</li>
+              <li>The colors are a bit... harsh. Consider yourself warned.</li>
             </ul>
+            <div class="projectLink" id="openProjectOne"><img width="30" src="./public/images/plus-circle-solid.svg"></div>
           </div>
           <div class="item" id="project2">
             <h2>Web Design Midterm</h2>
@@ -58,6 +59,7 @@
               <li>Made during freshman year at Univeristy</li>
               <li>Purely HTML and CSS with use of flexbox, iframes, and @media controls for a responsive design</li>
             </ul>
+            <div class="projectLink" id="openProjectTwo"><img width="30" src="./public/images/plus-circle-solid.svg"></div>
           </div>
           <div class="item" id="project3">
             <h2>Snapchat Data Visualizer</h2>
@@ -69,6 +71,7 @@
                 and storing it on a server
               </li>
             </ul>
+            <div class="projectLink" id="openProjectThree"><img width="30" src="./public/images/plus-circle-solid.svg"></div>
           </div>
           <div class="item" id="project4">
             <h2>Representative Web Portal</h2>
@@ -83,6 +86,7 @@
                 session-based authentication, dynamic HTML web forms with email-based submission
               </li>
             </ul>
+            <div class="projectLink"><img width="30" src="./public/images/plus-circle-solid.svg"></div>
           </div>
         </div>
       </div>
@@ -216,5 +220,99 @@
     </section>
   </div>
 </body>
+
+
+<!-- Website Showcase Modals -->
+<div id="projectModalOne" class="modal">
+  <div class="modal-content">
+    <div class="titlebar">
+      <div class="buttons">
+        <div class="minimize" id="closeProjectOne"></div>
+        <a href="./projects/firstWebsite/home.html" target="_blank"><div class="zoom"></div></a>
+      </div>
+      <div class="title">First Site</div>
+      <div style="width: 44px;"></div>
+    </div>
+    <object class="siteShowcase" type="text/html" data="./projects/firstWebsite/home.html"></object>
+  </div>
+</div>
+
+<div id="projectModalTwo" class="modal">
+  <div class="modal-content">
+    <div class="titlebar">
+      <div class="buttons">
+        <div class="minimize" id="closeProjectTwo"></div>
+        <a href="./projects/webDesignMidterm/Homepage/Homepage.html" target="_blank"><div class="zoom"></div></a>
+      </div>
+      <div class="title">Web Design Midterm</div>
+      <div style="width: 44px;"></div>
+    </div>
+    <object class="siteShowcase" type="text/html" data="./projects/webDesignMidterm/Homepage/Homepage.html"></object>
+  </div>
+</div>
+
+<div id="projectModalThree" class="modal">
+  <div class="modal-content">
+    <div class="titlebar">
+      <div class="buttons">
+        <div class="minimize" id="closeProjectThree"></div>
+        <a href="./projects/snapDataVisualizer/index.html" target="_blank"><div class="zoom"></div></a>
+      </div>
+      <div class="title">Snapchat Data Visualizer</div>
+      <div style="width: 44px;"></div>
+    </div>
+    <object class="siteShowcase" type="text/html" data="./projects/snapDataVisualizer/index.html"></object>
+  </div>
+</div>
+
+<div id="projectModalFour" class="modal">
+  <div class="modal-content">
+    <div class="titlebar">
+      <div class="buttons">
+        <div class="minimize" id="closeProjectFour"></div>
+      </div>
+      <div class="title">Representative Web Portal</div>
+      <div style="width: 22px;"></div>
+    </div>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img class="slideImage" src="./public/images/PortalLogin.png">
+        <div class="text">Login Page</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img class="slideImage" src="./public/images/PortalWelcome.png">
+        <div class="text">Welcome Page</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img class="slideImage" src="./public/images/PortalOrders.png">
+        <div class="text">Active Orders</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img class="slideImage" src="./public/images/PortalPassword.png">
+        <div class="text">Change Password</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img class="slideImage" src="./public/images/PortalForm.png">
+        <div class="text">Order Form</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+    </div>
+  </div>
+</div>
+
+<script src="./public/javascripts/modalControl.js"></script>
 
 </html>
