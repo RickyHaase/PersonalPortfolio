@@ -34,14 +34,14 @@ section {
   scroll-snap-align: center;
 }
 
-.columns3 {
+/* .columns3 {
   grid-auto-flow: unset;
   grid-template-columns: repeat(1, 1fr);
-}
-
+} */
+/* 
 .columns4 {
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 .chevronDown, .chevronUp {
   display: none;
@@ -90,5 +90,8 @@ section {
 @media screen and (max-width: 320px) {
   section {
     line-height: 1.3;
+  }
+  li {
+    font-size: 12px;
   }
 }

@@ -3,7 +3,7 @@
 } */
 
 #experience .content {
-  /* min-height: 70vh; */
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
 }

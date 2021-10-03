@@ -1,4 +1,4 @@
-/* Color Palletes
+/* Color Paletes
 Dark:
 -Background: #0b0c10
 -Section Background: #1f2833
@@ -40,6 +40,7 @@ section {
   display: grid;
   line-height: 1.6;
   scroll-snap-align: start;
+  overflow-x: auto;
 }
 
 p {
@@ -63,11 +64,15 @@ a {
 
 ul {
   padding-left: 30px;
-  font-size: 1.2em;
 }
 
 li {
   /* overflow: visible; */
+  font-size: 1.2em;
+}
+
+span {
+  white-space: nowrap;
 }
 
 /* Classes */
@@ -113,6 +118,9 @@ li {
 .columns4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  /* display: flex; */
+  /* flex: 1 1 0; */
+  /* flex-wrap: wrap; */
 }
 
 .mx-5 {
@@ -130,6 +138,11 @@ li {
   padding-bottom: 0.7vw;
   cursor: pointer;
 }
+
+/* .linkImage {
+  display: flex;
+  margin: auto;
+} */
 
 /* IDs */
 #project1 {
@@ -159,6 +172,18 @@ li {
   height: fit-content;
 }
 
+#linkGrid {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: end;
+}
+
+#scrollTop {
+  text-align: center; 
+  margin-top: 50px;
+}
+
 /* Horozontal scrolling containers */
 .grid {
   display: grid;
@@ -184,9 +209,13 @@ li {
   cursor: pointer;
 }
 
-.hs:before,
-.hs:after {
+.hs:before {
   content: '';
+  width: 10px;
+}
+
+.hs:after {
+  /* content: ''; */
   width: 10px;
 }
 
@@ -375,4 +404,17 @@ li {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+@media screen and (max-width: 800px) {
+  
+  .columns4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .columns3 {
+    grid-auto-flow: unset;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
