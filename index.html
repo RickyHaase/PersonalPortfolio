@@ -7,6 +7,7 @@
   <title>Personal Portfolio</title>
   <link rel="stylesheet" media="screen" href="./public/stylesheets/desktop.css" />
   <link rel="stylesheet" media="screen and (max-width: 425px)" href="./public/stylesheets/mobile.css" />
+  <link rel="stylesheet" media="screen" href="./public/stylesheets/timeline.css" />
   <script src="./public/javascripts/index.js"></script>
 </head>
 
@@ -115,10 +116,11 @@
               <li>CSS</li>
               <li>SQL</li>
               <li>Java</li>
+              <li>Python</li>
             </ul>
           </div>
           <div>
-            <h2>Frameworks</h2>
+            <h2>Frameworks <span>& Libraries</span></h2>
             <ul>
               <li>Bootstrap</li>
               <li>jQuery</li>
@@ -132,15 +134,18 @@
             <ul>
               <li>Windows</li>
               <li>MacOS</li>
-              <li>node.js</li>
               <li>Linux</li>
             </ul>
           </div>
           <div>
-            <h2>Software & Services</h2>
+            <h2>Tools</h2>
             <ul>
-              <li>VS Code</li>
-              <li>GitHub</li>
+              <li>NodeJS</li>
+              <li>SQL Server</li>
+              <li>Git/GitHub</li>
+              <li>Docker</li>
+              <li>Figma</li>
+              <li>diagrams.net</li>
             </ul>
           </div>
         </div>
@@ -159,18 +164,87 @@
         </a>
       </div>
       <div class="content">
-        <h1>Experience</h1>
-        <h2>Education</h2>
-        <ul>
-          <li>Campbell Univeristy - BS in IT Management and BS in Information Security - 2018-2021</li>
-        </ul>
-        <h2>Field-related experience</h2>
-        <ul>
-          <li>Arzberger Stationers - Web Developer - Summer Internship 2021, Part time remote Fall 2021</li>
-          <li>SIM International - IT Consultant - Summer 2020</li>
-          <li>Campbell University - Teacher’s Assistant for Web Design - Spring 2020</li>
-          <li>Campbell University - A/V Technician - Fall 2018</li>
-        </ul>
+        <div>
+          <h1>Experience</h1>
+        </div>
+        
+        <div id="timeline">
+          <div id="line">
+            <div id="organizations">
+              <div class="orgContainer">
+                <div class="orgText"><p>Guthmann Construction</p></div>
+                <div class="org" id="guthmann"><img src="./public/images/hammer-solid.svg"></div>
+              </div>
+              <div class="orgContainer">
+                <div class="orgText"><p><span>Chick-fil-A</span></p></div>
+                <div class="org" id="cfa"><img src="./public/images/cow-regular.svg"></div>
+              </div>
+              <div class="orgContainer">
+                <div class="orgText"><p>Campbell University</p></div>
+                <div class="org" id="cu"><img src="./public/images/graduation-cap-solid.svg"></div>
+              </div>
+              <div class="orgContainer">
+                <div class="orgText"><p>SIM International</p></div>
+                <div class="org" id="sim"><img src="./public/images/user-class-solid.svg"></div>
+              </div>
+              <div class="orgContainer">
+                <div class="orgText"><p>Dominos</p></div>
+                <div class="org" id="dominos"><img src="./public/images/pizza-slice-solid.svg"></div>
+              </div>
+              <div class="orgContainer">
+                <div class="orgText"><p>Arzberger Stationers</p></div>
+                <div class="org active" id="arz"><img src="./public/images/code-solid.svg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="descriptionContainer">
+          <ul class="orgDescription" id="guthmannDescription">
+            <li>Jul 2015 - Jan 2017 - Office Assistant - Charlotte, NC</li>
+            <li>Summer 2017 - General Laborer - Charlotte, NC</li>
+            <li>Dec 2020 - Jan 2021 - Carpenter - Charlotte, NC</li>
+          </ul>
+  
+          <ul class="orgDescription" id="cfaDescription">
+            <li>Spring & Summer 2018 - Front of House Team Member - Indian Land, SC</li>
+            <li>Spring 2019 - Front of House Team Member - Buies Creek, NC</li>
+            <li>Summer 2019 - Front of House Team Member - Indian Land, SC</li>
+            <li>Fall 2019 - Front and Back of House Team Member - Buies Creek, NC</li>
+          </ul>
+  
+          <ul class="orgDescription" id="cuDescription">
+            <li>Aug 2018 - Dec 2021 - BS Dual Degree in Info. Tech. Management and Info. Sec.</li>
+            <li>Sep 2018 - Dec 2018 - A/V Tech - Buies Creek, NC</li>
+            <li>Jan 2020 - Apr 2020 - Teacher's Assistant (Web Design) - Buies Creek, NC</li>
+          </ul>
+  
+          <ul class="orgDescription" id="simDescription">
+            <li>May 2020 - Jul 2020 -  Information Technology Consultant - Fort Mill, SC</li>
+            <ul>
+              <li>Designed a modular templating system to allow for reusability of core curriculum materials and easy setup of new classrooms.</li>
+              <li>Recorded training videos to assist the teachers who were working remotely in familiarizing themselves with the system.</li>
+            </ul>
+          </ul>
+  
+          <ul class="orgDescription" id="dominosDescription">
+            <li>May 2020 - Aug 2020 - Delivery Expert - Charlotte, NC</li>
+            <ul>
+              <li>Regularly made 5 deliveries per hour during peak hours. Franchise taget: 3 deliveries per hour.</li>
+              <li>One person commented "<a href="https://youtu.be/gbOXO3pw5hU?t=85" target="_blank">that was fast</a>."</li>
+            </ul>
+          </ul>
+  
+          <ul class="orgDescription active" id="arzDescription">
+            <li>June 2021 - Present - Web Development Intern - Charlotte, NC</li>
+            <ul>
+              <li>Designed and implemented a customer-facing web portal which interfaces with the database of an existing order management system.</li>
+              <li><strong>Core Technologies:</strong> NodeJS, jQuery, Bootstrap, expressJS, passportJS</li>
+              <li>Moved to a part-time remote role to continue feature development beyond the initial scope.</li>
+            </ul>
+          </ul>
+        </div>
+        
       </div>
       <div class="chevronDown">
         <a href="#footer">
@@ -314,5 +388,6 @@
 </div>
 
 <script src="./public/javascripts/modalControl.js"></script>
+<script src="./public/javascripts/timelineControl.js"></script>
 
 </html>

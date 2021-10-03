@@ -1,0 +1,161 @@
+/* #timeline * {
+  overflow:visible;
+} */
+
+#experience .content {
+  /* min-height: 70vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+#timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 320px;
+  /* overflow: visible; */
+}
+
+#line {
+  /* align-self: center;
+  justify-self: center; */
+  display: flex;
+  width: 100%;
+  height: 5px;
+  background-color: #66FCF1;
+  align-items: center;
+}
+
+#organizations {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 7.5%;
+}
+
+.orgContainer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* cursor: pointer; */
+}
+
+.org {
+  display: flex;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #66FCF1;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+
+.org > img {
+  margin: auto;
+  width: 25px;
+}
+
+.orgText {
+  transform: rotateZ(-45deg);
+  text-indent: -20px;
+  width: 50px;
+  height: 50px;
+  margin-top: -50px;
+  padding-bottom: 20px;
+  margin-right: calc(-80px + 2vw);
+}
+
+.descriptionContainer {
+  margin-top: -50px;
+  overflow-y: scroll;
+}
+
+.org.active {
+  background-color: #45A29E;
+  border: 3px solid #66FCF1;
+}
+
+.orgDescription {
+  display: none;
+}
+
+.orgDescription.active {
+  display: inline-block;
+}
+
+@media screen and (max-width: 716px) {
+  #line {
+    background-color: rgba(0, 0, 0, 0);
+    height: 200px;
+  }
+
+  #organizations {
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin-top: 20px;
+  }
+
+  .orgContainer {
+    height: 100px;
+    width: 100px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: initial;
+    margin: 10px;
+  }
+
+  .orgText {
+    transform: initial;
+    text-indent: initial;
+    margin-top: initial;
+    padding-bottom: initial;
+    margin-right: initial;
+    width: initial;
+    padding-top: 5px;
+  }
+
+  .org {
+    margin: 0;
+  }
+
+  .orgText p {
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  #experience .content ul {
+    font-size: 13px;
+  }
+
+  .descriptionContainer {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .orgContainer {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .org {
+    height: 30px;
+    width: 30px;
+  }
+
+  .org > img {
+    width: 20px;
+  }
+
+  .descriptionContainer {
+    margin-top: 0px;
+  }
+
+  .orgText p,
+  #experience .content ul  {
+    font-size: 12px;
+  }
+
+}
