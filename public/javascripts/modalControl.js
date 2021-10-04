@@ -14,7 +14,7 @@ var closeOne = document.getElementById('closeProjectOne');
 // When the user clicks the button, open the modal 
 openOne.onclick = function() {
   if(intViewportWidth < 800){
-    window.open("http://127.0.0.1:5500/projects/firstWebsite/home.html");
+    window.open("./projects/firstWebsite/home.html");
   }else{
     modalOne.style.display = "block";
   }
@@ -45,7 +45,7 @@ var closeTwo = document.getElementById('closeProjectTwo');
 
 openTwo.onclick = function() {
   if(intViewportWidth < 800){
-    window.open("http://127.0.0.1:5500/projects/webDesignMidterm/Homepage/Homepage.html");
+    window.open("./projects/webDesignMidterm/Homepage/Homepage.html");
   }else{
     modalTwo.style.display = "block";
   }
@@ -62,7 +62,7 @@ var closeThree = document.getElementById('closeProjectThree');
 
 openThree.onclick = function() {
   if(intViewportWidth < 800){
-    window.open("http://127.0.0.1:5500/projects/snapDataVisualizer/index.html");
+    window.open("./projects/snapDataVisualizer/index.html");
   }else{
     modalThree.style.display = "block";
   }
