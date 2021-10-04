@@ -1,405 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" media="screen" href="./public/stylesheets/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 425px)" href="./public/stylesheets/mobile.css" />
+    <link rel="stylesheet" media="screen" href="./public/stylesheets/timeline.css" />
+    <script src="./public/javascripts/index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" media="screen" href="./public/stylesheets/desktop.css" />
-  <link rel="stylesheet" media="screen and (max-width: 425px)" href="./public/stylesheets/mobile.css" />
-  <link rel="stylesheet" media="screen" href="./public/stylesheets/timeline.css" />
-  <script src="./public/javascripts/index.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <section class="" id="aboutMe">
-      <div class="nav hidden" id="nav">
-        <a href="#footer">Contact</a>
-        <a href="#skills">Skills</a>
-        <a href="./public/assets/Richard_Haase_Resume.pdf" target="_blank">Resume</a>
-      </div>
-      <div class="content">
-        <p id="introCode"></p>
-        <h1 id="aboutHeader" class="hidden">Hello World</h1>
-        <p id="aboutContent" class="hidden">
-          My name is Ricky and I am fairly new to this whole web development thing. That being said, I’ve got a number
-          of projects under my belt, each one exponentially better than the last. I have what I feel to be a good base
-          knowledge of the web development field and am constantly learning new technologies and skills. Take a look
-          at some of my projects below:
-        </p>
-      </div>
-      <div class="chevronDown">
-        <a href="#projects" class="hidden" id="nextPage">
-          <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
-        </a>
-      </div>
-    </section>
-
-    <section class="" id="projects">
-      <div class="chevronUp">
-        <a href="#aboutMe">
-          <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
-        </a>
-      </div>
-      <div class="content grid">
-        <h1>Projects</h1>
-        <div class="hs">
-          <div class="item" id="project1">
-            <h2>First Website</h2>
-            <ul>
-              <li>Made in Highschool for CSEC-102</li>
-              <li>Basic HTML and minimal CSS</li>
-              <li>The colors are a bit... harsh. Consider yourself warned.</li>
-            </ul>
-            <div class="projectLink" id="openProjectOne"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
-          </div>
-          <div class="item" id="project2">
-            <h2>Web Design Midterm</h2>
-            <ul>
-              <li>Made during freshman year at Univeristy</li>
-              <li>Purely HTML and CSS with use of flexbox, iframes, and @media controls for a responsive design</li>
-            </ul>
-            <div class="projectLink" id="openProjectTwo"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
-          </div>
-          <div class="item" id="project3">
-            <h2>Snapchat Data Visualizer</h2>
-            <ul>
-              <li>Junior year at University</li>
-              <li>Lots of vanilla JS (ES6) with use of chartsJS library</li>
-              <li>
-                All data processing is handled in the front-end as to avoid sending a user’s sensitive snapchat data
-                and storing it on a server
-              </li>
-            </ul>
-            <div class="projectLink" id="openProjectThree"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
-          </div>
-          <div class="item" id="project4">
-            <h2>Representative Web Portal</h2>
-            <ul>
-              <li>Project for internship between Junior and Senior years at university</li>
-              <li>
-                Server-side page rendering, dynamic HTML Forms, Bootstrap, MS-SQL, nodeJS, expressJS, passportJS,
-                nodemailer, jQuery, etc.
-              </li>
-              <li>
-                Integrated with an existing order management system’s database, created an authentication system with
-                session-based authentication, dynamic HTML web forms with email-based submission
-              </li>
-            </ul>
-            <div class="projectLink"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
-          </div>
+  <body>
+    <div class="container">
+      <section class="" id="aboutMe">
+        <div class="nav hidden" id="nav">
+          <a href="#footer">Contact</a>
+          <a href="#skills">Skills</a>
+          <a href="./public/assets/Richard_Haase_Resume.pdf" target="_blank">Resume</a>
         </div>
-      </div>
-      <div class="chevronDown">
-        <a href="#skills">
-          <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
-        </a>
-      </div>
-    </section>
-
-    <section class="" id="skills">
-      <div class="chevronUp">
-        <a href="#projects">
-          <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
-        </a>
-      </div>
-      <div class="content">
-        <h1>Technologies</h1>
-        <p>Here are some of the technologies with which I am familiar:</p>
-        <div class="columns4">
-          <div>
-            <h2>Languages</h2>
-            <ul>
-              <li>HTML</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>SQL</li>
-              <li>Java</li>
-              <li>Python</li>
-            </ul>
-          </div>
-          <div>
-            <h2>Frameworks <span>& Libraries</span></h2>
-            <ul>
-              <li>Bootstrap</li>
-              <li>jQuery</li>
-              <li>expressJS</li>
-              <li>passportJS</li>
-              <li>chartsJS</li>
-            </ul>
-          </div>
-          <div>
-            <h2>Platforms</h2>
-            <ul>
-              <li>Windows</li>
-              <li>MacOS</li>
-              <li>Linux</li>
-            </ul>
-          </div>
-          <div>
-            <h2>Tools</h2>
-            <ul>
-              <li>NodeJS</li>
-              <li>SQL Server</li>
-              <li>Git/GitHub</li>
-              <li>Docker</li>
-              <li>Figma</li>
-              <li>diagrams.net</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="chevronDown">
-        <a href="#experience">
-          <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
-        </a>
-      </div>
-    </section>
-
-    <section class="" id="experience">
-      <div class="chevronUp">
-        <a href="#skills">
-          <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
-        </a>
-      </div>
-      <div class="content">
-        <div>
-          <h1>Experience</h1>
-        </div>
-
-        <div id="timeline">
-          <div id="line">
-            <div id="organizations">
-              <div class="orgContainer">
-                <div class="orgText"><p>Guthmann Construction</p></div>
-                <div class="org" id="guthmann"><img alt="Hammer" src="./public/images/hammer-solid.svg"></div>
-              </div>
-              <div class="orgContainer">
-                <div class="orgText"><p><span>Chick-fil-A</span></p></div>
-                <div class="org" id="cfa"><img alt="Chick-fil-A Cow" src="./public/images/cow-regular.svg"></div>
-              </div>
-              <div class="orgContainer">
-                <div class="orgText"><p>Campbell University</p></div>
-                <div class="org" id="cu"><img alt="University" src="./public/images/graduation-cap-solid.svg"></div>
-              </div>
-              <div class="orgContainer">
-                <div class="orgText"><p>SIM International</p></div>
-                <div class="org" id="sim"><img alt="Virtual Classroom" src="./public/images/user-class-solid.svg"></div>
-              </div>
-              <div class="orgContainer">
-                <div class="orgText"><p>Dominos</p></div>
-                <div class="org" id="dominos"><img alt="Pizza Slice" src="./public/images/pizza-slice-solid.svg"></div>
-              </div>
-              <div class="orgContainer">
-                <div class="orgText"><p>Arzberger Stationers</p></div>
-                <div class="org active" id="arz"><img alt="Code Symbol" src="./public/images/code-solid.svg"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="descriptionContainer">
-          <ul class="orgDescription" id="guthmannDescription">
-            <li>Jul 2015 - Jan 2017 - Office Assistant - Charlotte, NC</li>
-            <li>Summer 2017 - General Laborer - Charlotte, NC</li>
-            <li>Dec 2020 - Jan 2021 - Carpenter - Charlotte, NC</li>
-          </ul>
-  
-          <ul class="orgDescription" id="cfaDescription">
-            <li>Spring & Summer 2018 - Front of House Team Member - Indian Land, SC</li>
-            <li>Spring 2019 - Front of House Team Member - Buies Creek, NC</li>
-            <li>Summer 2019 - Front of House Team Member - Indian Land, SC</li>
-            <li>Fall 2019 - Front and Back of House Team Member - Buies Creek, NC</li>
-          </ul>
-  
-          <ul class="orgDescription" id="cuDescription">
-            <li>Aug 2018 - Dec 2021 - BS Dual Degree in Info. Tech. Management and Info. Sec.</li>
-            <li>Sep 2018 - Dec 2018 - A/V Tech - Buies Creek, NC</li>
-            <li>Jan 2020 - Apr 2020 - Teacher's Assistant (Web Design) - Buies Creek, NC</li>
-          </ul>
-  
-          <ul class="orgDescription" id="simDescription">
-            <li>May 2020 - Jul 2020 -  Information Technology Consultant - Fort Mill, SC</li>
-            <ul>
-              <li>Designed a modular templating system to allow for reusability of core curriculum materials and easy setup of new classrooms.</li>
-              <li>Recorded training videos to assist the teachers who were working remotely in familiarizing themselves with the system.</li>
-            </ul>
-          </ul>
-  
-          <ul class="orgDescription" id="dominosDescription">
-            <li>May 2020 - Aug 2020 - Delivery Expert - Charlotte, NC</li>
-            <ul>
-              <li>Regularly made 5 deliveries per hour during peak hours. Franchise taget: 3 deliveries per hour.</li>
-              <li>One person commented "<a href="https://youtu.be/gbOXO3pw5hU?t=85" target="_blank">that was fast</a>."</li>
-            </ul>
-          </ul>
-  
-          <ul class="orgDescription active" id="arzDescription">
-            <li>June 2021 - Present - Web Development Intern - Charlotte, NC</li>
-            <ul>
-              <li>Designed and implemented a customer-facing web portal which interfaces with the database of an existing order management system.</li>
-              <li><strong>Core Technologies:</strong> NodeJS, jQuery, Bootstrap, expressJS, passportJS</li>
-              <li>Moved to a part-time remote role to continue feature development beyond the initial scope.</li>
-            </ul>
-          </ul>
-        </div>
-        
-      </div>
-      <div class="chevronDown">
-        <a href="#footer">
-          <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
-        </a>
-      </div>
-    </section>
-
-    <section id="footer">
-      <a href="#aboutMe">
-        <h1>Haase Dev</h1>
-      </a>
-      <div class="columns3">
-        <div id="contact">
-          <h2>Contact</h2>
-          <p>
-            <a href="tel:">
-              <img width="15" src="./public/images/phone-solid.svg" alt="LinkedIn" />
-              Currently Unavailable</a>
+        <div class="content">
+          <p id="introCode"></p>
+          <h1 id="aboutHeader" class="hidden">Hello World</h1>
+          <noscript><h1>Please enable JavaScript</h1><p>Some features of the site will only work with JS enabled.</p></noscript>
+          <p id="aboutContent" class="hidden">
+            My name is Ricky and I am fairly new to this whole web development thing. That being said, I’ve got a number
+            of projects under my belt, each one exponentially better than the last. I have what I feel to be a good base
+            knowledge of the web development field and am constantly learning new technologies and skills. Take a look
+            at some of my projects below.
           </p>
-          <a href="mailto:ricky@haase.house">
-            <img width="15" src="./public/images/envelope-regular.svg" alt="LinkedIn" />
-            ricky@haase.house
+        </div>
+        <div class="chevronDown">
+          <a href="#projects" class="hidden" id="nextPage">
+            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
           </a>
         </div>
-        <div id="links">
-          <h2>Links</h2>
-          <div id="linkGrid">
-            <div class="linkImage">
-              <a class="mx-5" href="https://www.linkedin.com/in/richard-haase-8218701a0" target="_blank" rel="noopener">
-                <img width="32" height="36" src="./public/images/linkedin-in-brands.svg" alt="LinkedIn" />
-              </a>
+      </section>
+
+      <section class="" id="projects">
+        <div class="chevronUp">
+          <a href="#aboutMe">
+            <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
+          </a>
+        </div>
+        <div class="content grid">
+          <h1>Projects</h1>
+          <div class="hs">
+            <div class="item" id="project4">
+              <h2>Representative Web Portal</h2>
+              <ul>
+                <li>Project for web development internship between Junior and Senior years at university.</li>
+                <li>
+                  Server-side page rendering, dynamic HTML Forms, Bootstrap, MS-SQL, nodeJS, expressJS, passportJS,
+                  nodemailer, jQuery, etc.
+                </li>
+                <li>
+                  Integrated with an existing order management system’s database, created an authentication system with
+                  session-based authentication, dynamic HTML web forms with email-based submission
+                </li>
+              </ul>
+              <div class="projectLink"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
             </div>
-            <div class="linkImage">
-              <a class="mx-5" href="https://github.com/RickyHaase" target="_blank" rel="noopener">
-                <img width="32" height="33" src="./public/images/github-brands.svg" alt="GitHub" />
-              </a>
+            <div class="item" id="project3">
+              <h2>Snapchat Data Visualizer</h2>
+              <ul>
+                <li>Completed during junior year of university.</li>
+                <li>Imports data from Snapchat user data export and organizes the data, formatting it in an easily readable manner accompanied by charts to visualize the data.</li>
+                <li>Lots of vanilla JS (ES6) with use of chartsJS library.</li>
+                <li>
+                  All data processing is handled in the front-end as to avoid sending a user’s sensitive user data
+                  and storing it on a server.
+                </li>
+              </ul>
+              <div class="projectLink" id="openProjectThree"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
             </div>
-            <div class="linkImage">
-              <a class="mx-5" href="./public/assets/Richard_Haase_Resume.pdf" target="_blank">
-                <img width="32" height="43" src="./public/images/file-pdf-regular.svg" alt="Resume" />
-              </a>
+            <div class="item" id="project2">
+              <h2>Web Design Midterm</h2>
+              <ul>
+                <li>Made during freshman year at Univeristy</li>
+                <li>Purely HTML and CSS with use of flexbox, iframes, and @media controls for a responsive design.</li>
+              </ul>
+              <div class="projectLink" id="openProjectTwo"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
+            </div>
+            <div class="item" id="project1">
+              <h2>First Website</h2>
+              <ul>
+                <li>Made in Highschool for CSEC-102</li>
+                <li>Basic HTML and minimal CSS</li>
+                <li>The colors are a bit... harsh. Consider yourself warned.</li>
+              </ul>
+              <div class="projectLink" id="openProjectOne"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
             </div>
           </div>
         </div>
-        <div id="footerProjects">
-          <h2>Projects</h2>
-          <p>
-            <a href="./projects/firstWebsite/home.html" target="_blank">First Website</a><br />
-            <a href="./projects/webDesignMidterm/Homepage/Homepage.html" target="_blank">Web Design Midterm</a><br />
-            <a href="./projects/snapDataVisualizer/index.html" target="_blank">Snapchat Data Visualizer</a>
-          </p>
+        <div class="chevronDown">
+          <a href="#skills">
+            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+          </a>
+        </div>
+      </section>
+
+      <section class="" id="skills">
+        <div class="chevronUp">
+          <a href="#projects">
+            <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
+          </a>
+        </div>
+        <div class="content">
+          <h1>Technologies</h1>
+          <p>Here are some of the technologies with which I am familiar:</p>
+          <div class="columns4">
+            <div>
+              <h2>Languages</h2>
+              <ul>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Frameworks <span>& Libraries</span></h2>
+              <ul>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>expressJS</li>
+                <li>passportJS</li>
+                <li>chartsJS</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Platforms</h2>
+              <ul>
+                <li>Windows</li>
+                <li>MacOS</li>
+                <li>Linux</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Tools</h2>
+              <ul>
+                <li>NodeJS</li>
+                <li>SQL Server</li>
+                <li>Git/GitHub</li>
+                <li>Docker</li>
+                <li>Figma</li>
+                <li>diagrams.net</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="chevronDown">
+          <a href="#experience">
+            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+          </a>
+        </div>
+      </section>
+
+      <section class="" id="experience">
+        <div class="chevronUp">
+          <a href="#skills">
+            <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
+          </a>
+        </div>
+        <div class="content">
+          <div>
+            <h1>Experience</h1>
+          </div>
+
+          <div id="timeline">
+            <div id="line">
+              <div id="organizations">
+                <div class="orgContainer">
+                  <div class="orgText"><p>Guthmann Construction</p></div>
+                  <div class="org" id="guthmann"><img alt="Hammer" src="./public/images/hammer-solid.svg"></div>
+                </div>
+                <div class="orgContainer">
+                  <div class="orgText"><p><span>Chick-fil-A</span></p></div>
+                  <div class="org" id="cfa"><img alt="Chick-fil-A Cow" src="./public/images/cow-regular.svg"></div>
+                </div>
+                <div class="orgContainer">
+                  <div class="orgText"><p>Campbell University</p></div>
+                  <div class="org" id="cu"><img alt="University" src="./public/images/graduation-cap-solid.svg"></div>
+                </div>
+                <div class="orgContainer">
+                  <div class="orgText"><p><span>SIM International</span></p></div>
+                  <div class="org" id="sim"><img alt="Virtual Classroom" src="./public/images/user-class-solid.svg"></div>
+                </div>
+                <div class="orgContainer">
+                  <div class="orgText"><p>Dominos</p></div>
+                  <div class="org" id="dominos"><img alt="Pizza Slice" src="./public/images/pizza-slice-solid.svg"></div>
+                </div>
+                <div class="orgContainer">
+                  <div class="orgText"><p>Arzberger Stationers</p></div>
+                  <div class="org active" id="arz"><img alt="Code Symbol" src="./public/images/code-solid.svg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="descriptionContainer">
+            <ul class="orgDescription" id="guthmannDescription">
+              <li>Jul 2015-Jan 2017 - Office Assistant - Charlotte, NC</li>
+              <li>Jun 2017-Aug 2017 - General Laborer - Charlotte, NC</li>
+              <li>Dec 2020-Jan 2021 - Carpenter - Charlotte, NC</li>
+            </ul>
+    
+            <ul class="orgDescription" id="cfaDescription">
+              <li>Apr 2018-Aug 2018 - Front of House Team Member - Indian Land, SC</li>
+              <li>Jan 2019-May 2019 - Front of House Team Member - Buies Creek, NC</li>
+              <li>Jun 2019-Aug 2019 - Front of House Team Member - Indian Land, SC</li>
+              <li>Aug 2019-Oct 2019 - Front & Back of House Team Member - Buies Creek, NC</li>
+            </ul>
+    
+            <ul class="orgDescription" id="cuDescription">
+              <li>Aug 2018-Dec 2021 - BS Dual Degree in Info. Tech. Management and Info. Sec.</li>
+              <li>Sep 2018-Dec 2018 - A/V Tech - Buies Creek, NC</li>
+              <li>Jan 2020-Apr 2020 - Teacher's Assistant (Web Design) - Buies Creek, NC</li>
+            </ul>
+    
+            <ul class="orgDescription" id="simDescription">
+              <li>May 2020-Jul 2020 -  Information Technology Consultant - Fort Mill, SC</li>
+              <ul>
+                <li>Implemented an online learning management using Google Classroom for the kids program.</li>
+                <li>Designed a modular templating system to allow for the reusability of core curriculum materials and easy setup of new classrooms.</li>
+                <li>Recorded training videos to help familiarize teachers with the system.</li>
+              </ul>
+            </ul>
+    
+            <ul class="orgDescription" id="dominosDescription">
+              <li>May 2020-Aug 2020 - Delivery Expert - Charlotte, NC</li>
+              <ul>
+                <li>Regularly made 5 deliveries per hour during peak hours. Franchise taget is 3 deliveries per hour.</li>
+                <li>One person commented <a href="https://youtu.be/gbOXO3pw5hU?t=89" target="_blank">"that was fast."</a></li>
+              </ul>
+            </ul>
+    
+            <ul class="orgDescription active" id="arzDescription">
+              <li>Jun 2021-Current - Web Development Intern - Charlotte, NC</li>
+              <ul>
+                <li>Designed and implemented a customer-facing web portal which interfaces with the database of an existing order management system.</li>
+                <li><strong>Core Technologies:</strong> NodeJS, jQuery, Bootstrap, expressJS, passportJS</li>
+                <li>Moved to a part-time remote role to continue feature development beyond the initial scope.</li>
+              </ul>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="chevronDown">
+          <a href="#footer">
+            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+          </a>
+        </div>
+      </section>
+
+      <section id="footer">
+        <!-- <a href="#aboutMe">
+          <h1>Haase Dev</h1>
+        </a> -->
+        <div class="columns3">
+          <div id="contact">
+            <h2>Contact</h2>
+            <!-- <p>
+              <a href="tel:">
+                <img width="15" src="./public/images/phone-solid.svg" alt="LinkedIn"/>
+              </a>
+            </p> -->
+            <a href="mailto:ricky@rickyh.dev">
+              <img width="15" src="./public/images/envelope-regular.svg" alt="LinkedIn" /> ricky@rickyh.dev
+            </a>
+          </div>
+          <div id="links">
+            <h2>Links</h2>
+            <div id="linkGrid">
+              <div class="linkImage">
+                <a class="mx-5" href="https://www.linkedin.com/in/richard-haase-8218701a0" target="_blank" rel="noopener">
+                  <img width="32" height="36" src="./public/images/linkedin-in-brands.svg" alt="LinkedIn" />
+                </a>
+              </div>
+              <div class="linkImage">
+                <a class="mx-5" href="https://github.com/RickyHaase" target="_blank" rel="noopener">
+                  <img width="32" height="33" src="./public/images/github-brands.svg" alt="GitHub" />
+                </a>
+              </div>
+              <div class="linkImage">
+                <a class="mx-5" href="./public/assets/Richard_Haase_Resume.pdf" target="_blank">
+                  <img width="32" height="43" src="./public/images/file-pdf-regular.svg" alt="Resume" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <div id="footerProjects">
+            <h2>Projects</h2>
+            <p>
+              <a href="./projects/firstWebsite/home.html" target="_blank">First Website</a><br />
+              <a href="./projects/webDesignMidterm/Homepage/Homepage.html" target="_blank">Web Design Midterm</a><br />
+              <a href="./projects/snapDataVisualizer/index.html" target="_blank">Snapchat Data Visualizer</a><br>
+              <a href="#" id="portalFooterLink">Representative Web Portal</a>
+            </p>
+          </div> -->
+        </div>
+        <a id="scrollTop" href="#aboutMe">
+          <img width="25" src="./public/images/chevron-up-solid.svg" alt="Top of Page" />
+        </a>
+      </section>
+    </div>
+  </body>
+
+  <!-- Website Showcase Modals -->
+  <div id="modalContainer">
+    <div id="projectModalOne" class="modal">
+      <div class="modal-content">
+        <div class="titlebar">
+          <div class="buttons">
+            <div class="minimize" id="closeProjectOne"></div>
+            <a href="./projects/firstWebsite/home.html" target="_blank"><div class="zoom"></div></a>
+          </div>
+          <div class="title">First Site</div>
+          <div style="width: 44px;"></div>
+        </div>
+        <object class="siteShowcase" type="text/html" data="./projects/firstWebsite/home.html"></object>
+      </div>
+    </div>
+    
+    <div id="projectModalTwo" class="modal">
+      <div class="modal-content">
+        <div class="titlebar">
+          <div class="buttons">
+            <div class="minimize" id="closeProjectTwo"></div>
+            <a href="./projects/webDesignMidterm/Homepage/Homepage.html" target="_blank"><div class="zoom"></div></a>
+          </div>
+          <div class="title">Web Design Midterm</div>
+          <div style="width: 44px;"></div>
+        </div>
+        <object class="siteShowcase" type="text/html" data="./projects/webDesignMidterm/Homepage/Homepage.html"></object>
+      </div>
+    </div>
+    
+    <div id="projectModalThree" class="modal">
+      <div class="modal-content">
+        <div class="titlebar">
+          <div class="buttons">
+            <div class="minimize" id="closeProjectThree"></div>
+            <a href="./projects/snapDataVisualizer/index.html" target="_blank"><div class="zoom"></div></a>
+          </div>
+          <div class="title">Snapchat Data Visualizer</div>
+          <div style="width: 44px;"></div>
+        </div>
+        <object class="siteShowcase" type="text/html" data="./projects/snapDataVisualizer/index.html"></object>
+      </div>
+    </div>
+    
+    <div id="projectModalFour" class="modal">
+      <div class="modal-content">
+        <div class="titlebar">
+          <div class="buttons">
+            <div class="minimize" id="closeProjectFour"></div>
+          </div>
+          <div class="title">Representative Web Portal</div>
+          <div style="width: 22px;"></div>
+        </div>
+        <div class="slideshow-container">
+    
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img class="slideImage" src="./public/images/PortalLogin.png">
+            <div class="text">Login Page</div>
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img class="slideImage" src="./public/images/PortalWelcome.png">
+            <div class="text">Welcome Page</div>
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img class="slideImage" src="./public/images/PortalOrders.png">
+            <div class="text">Active Orders</div>
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img class="slideImage" src="./public/images/PortalPassword.png">
+            <div class="text">Change Password</div>
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img class="slideImage" src="./public/images/PortalForm.png">
+            <div class="text">Order Form</div>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
-      <a id="scrollTop" href="#aboutMe">
-        <img width="25" src="./public/images/chevron-up-solid.svg" alt="Top of Page" />
-      </a>
-    </section>
-  </div>
-</body>
-
-
-<!-- Website Showcase Modals -->
-<div id="modalContainer">
-  <div id="projectModalOne" class="modal">
-    <div class="modal-content">
-      <div class="titlebar">
-        <div class="buttons">
-          <div class="minimize" id="closeProjectOne"></div>
-          <a href="./projects/firstWebsite/home.html" target="_blank"><div class="zoom"></div></a>
-        </div>
-        <div class="title">First Site</div>
-        <div style="width: 44px;"></div>
-      </div>
-      <object class="siteShowcase" type="text/html" data="./projects/firstWebsite/home.html"></object>
     </div>
   </div>
-  
-  <div id="projectModalTwo" class="modal">
-    <div class="modal-content">
-      <div class="titlebar">
-        <div class="buttons">
-          <div class="minimize" id="closeProjectTwo"></div>
-          <a href="./projects/webDesignMidterm/Homepage/Homepage.html" target="_blank"><div class="zoom"></div></a>
-        </div>
-        <div class="title">Web Design Midterm</div>
-        <div style="width: 44px;"></div>
-      </div>
-      <object class="siteShowcase" type="text/html" data="./projects/webDesignMidterm/Homepage/Homepage.html"></object>
-    </div>
-  </div>
-  
-  <div id="projectModalThree" class="modal">
-    <div class="modal-content">
-      <div class="titlebar">
-        <div class="buttons">
-          <div class="minimize" id="closeProjectThree"></div>
-          <a href="./projects/snapDataVisualizer/index.html" target="_blank"><div class="zoom"></div></a>
-        </div>
-        <div class="title">Snapchat Data Visualizer</div>
-        <div style="width: 44px;"></div>
-      </div>
-      <object class="siteShowcase" type="text/html" data="./projects/snapDataVisualizer/index.html"></object>
-    </div>
-  </div>
-  
-  <div id="projectModalFour" class="modal">
-    <div class="modal-content">
-      <div class="titlebar">
-        <div class="buttons">
-          <div class="minimize" id="closeProjectFour"></div>
-        </div>
-        <div class="title">Representative Web Portal</div>
-        <div style="width: 22px;"></div>
-      </div>
-      <div class="slideshow-container">
-  
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 5</div>
-          <img class="slideImage" src="./public/images/PortalLogin.png">
-          <div class="text">Login Page</div>
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 5</div>
-          <img class="slideImage" src="./public/images/PortalWelcome.png">
-          <div class="text">Welcome Page</div>
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 5</div>
-          <img class="slideImage" src="./public/images/PortalOrders.png">
-          <div class="text">Active Orders</div>
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 5</div>
-          <img class="slideImage" src="./public/images/PortalPassword.png">
-          <div class="text">Change Password</div>
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">5 / 5</div>
-          <img class="slideImage" src="./public/images/PortalForm.png">
-          <div class="text">Order Form</div>
-        </div>
-  
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-    </div>
-  </div>
-</div>
 
-<script src="./public/javascripts/modalControl.js"></script>
-<script src="./public/javascripts/timelineControl.js"></script>
-
+  <script src="./public/javascripts/modalControl.js"></script>
+  <script src="./public/javascripts/timelineControl.js"></script>
 </html>

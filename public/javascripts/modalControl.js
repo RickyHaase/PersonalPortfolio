@@ -1,3 +1,6 @@
+// Get Windows width
+let intViewportWidth = window.innerWidth;
+
 // (W3 Schools)
 // Get the modal
 var modalOne = document.getElementById("projectModalOne");
@@ -10,7 +13,11 @@ var closeOne = document.getElementById('closeProjectOne');
 
 // When the user clicks the button, open the modal 
 openOne.onclick = function() {
-  modalOne.style.display = "block";
+  if(intViewportWidth < 800){
+    window.open("http://127.0.0.1:5500/projects/firstWebsite/home.html");
+  }else{
+    modalOne.style.display = "block";
+  }
 }
 
 // When the user clicks on minimize button, close the modal
@@ -37,7 +44,11 @@ var openTwo = document.getElementById("project2");
 var closeTwo = document.getElementById('closeProjectTwo');
 
 openTwo.onclick = function() {
-  modalTwo.style.display = "block";
+  if(intViewportWidth < 800){
+    window.open("http://127.0.0.1:5500/projects/webDesignMidterm/Homepage/Homepage.html");
+  }else{
+    modalTwo.style.display = "block";
+  }
 }
 
 closeTwo.onclick = function() {
@@ -50,7 +61,11 @@ var openThree = document.getElementById("project3");
 var closeThree = document.getElementById('closeProjectThree');
 
 openThree.onclick = function() {
-  modalThree.style.display = "block";
+  if(intViewportWidth < 800){
+    window.open("http://127.0.0.1:5500/projects/snapDataVisualizer/index.html");
+  }else{
+    modalThree.style.display = "block";
+  }
 }
 
 closeThree.onclick = function() {
