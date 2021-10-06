@@ -6,7 +6,7 @@ let intViewportWidth = window.innerWidth;
 var modalOne = document.getElementById("projectModalOne");
 
 // Get the button that opens the modal
-var openOne = document.getElementById("project1");
+var openOne = document.getElementById("openProjectOne");
 
 // Get the element that closes the modal
 var closeOne = document.getElementById('closeProjectOne');
@@ -18,6 +18,7 @@ openOne.onclick = function() {
   }else{
     modalOne.style.display = "block";
   }
+  openOne.childNodes[0].classList.remove('pulse');
 }
 
 // When the user clicks on minimize button, close the modal
@@ -40,7 +41,7 @@ window.onclick = function (event) {
 
 // Project 2
 var modalTwo = document.getElementById("projectModalTwo");
-var openTwo = document.getElementById("project2");
+var openTwo = document.getElementById("openProjectTwo");
 var closeTwo = document.getElementById('closeProjectTwo');
 
 openTwo.onclick = function() {
@@ -49,6 +50,7 @@ openTwo.onclick = function() {
   }else{
     modalTwo.style.display = "block";
   }
+  openTwo.childNodes[0].classList.remove('pulse');
 }
 
 closeTwo.onclick = function() {
@@ -57,7 +59,7 @@ closeTwo.onclick = function() {
 
 // Project 3
 var modalThree = document.getElementById("projectModalThree");
-var openThree = document.getElementById("project3");
+var openThree = document.getElementById("openProjectThree");
 var closeThree = document.getElementById('closeProjectThree');
 
 openThree.onclick = function() {
@@ -66,6 +68,7 @@ openThree.onclick = function() {
   }else{
     modalThree.style.display = "block";
   }
+  openThree.childNodes[0].classList.remove('pulse');
 }
 
 closeThree.onclick = function() {
@@ -74,11 +77,12 @@ closeThree.onclick = function() {
 
 // Project 4
 var modalFour = document.getElementById("projectModalFour");
-var openFour = document.getElementById("project4");
+var openFour = document.getElementById("openProjectFour");
 var closeFour = document.getElementById('closeProjectFour');
 
 openFour.onclick = function() {
   modalFour.style.display = "block";
+  openFour.childNodes[0].classList.remove('pulse');
 }
 
 closeFour.onclick = function() {

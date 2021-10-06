@@ -35,6 +35,10 @@ section {
   scroll-snap-align: center;
 }
 
+.item li {
+  font-size: 1em;
+}
+
 /* .columns3 {
   grid-auto-flow: unset;
   grid-template-columns: repeat(1, 1fr);

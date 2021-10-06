@@ -50,27 +50,28 @@ arz.onclick = function() {
 
 // Adds class "active" to the element associated with the passed parameter
 function activate(id){
-   if(id = 'guthmann'){
+   if(id === 'guthmann'){
       guthmann.classList.add('active');
       guthmannDescription.classList.add('active');
    }
-   if(id = 'cfa'){
+   if(id === 'cfa'){
       cfa.classList.add('active');
       cfaDescription.classList.add('active');
    }
-   if(id = 'cu'){
+   if(id === 'cu'){
+      cu.classList.remove('pulse')
       cu.classList.add('active');
       cuDescription.classList.add('active');
    }
-   if(id = 'sim'){
+   if(id === 'sim'){
       sim.classList.add('active');
       simDescription.classList.add('active');
    }
-   if(id = 'dominos'){
+   if(id === 'dominos'){
       dominos.classList.add('active');
       dominosDescription.classList.add('active');
    }
-   if(id = 'arz'){
+   if(id === 'arz'){
       arz.classList.add('active');
       arzDescription.classList.add('active');
    }

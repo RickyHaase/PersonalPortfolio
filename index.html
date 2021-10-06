@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>Richard Haase Portfolio</title>
     <link rel="stylesheet" media="screen" href="./public/stylesheets/desktop.css" />
     <link rel="stylesheet" media="screen and (max-width: 425px)" href="./public/stylesheets/mobile.css" />
     <link rel="stylesheet" media="screen" href="./public/stylesheets/timeline.css" />
@@ -23,15 +23,13 @@
           <h1 id="aboutHeader" class="hidden">Hello World</h1>
           <noscript><h1>Please enable JavaScript</h1><p>Some features of the site will only work with JS enabled.</p></noscript>
           <p id="aboutContent" class="hidden">
-            My name is Ricky and I am fairly new to this whole web development thing. That being said, I’ve got a number
-            of projects under my belt, each one exponentially better than the last. I have what I feel to be a good base
-            knowledge of the web development field and am constantly learning new technologies and skills. Take a look
-            at some of my projects below.
+            I'm Richard Haase and I've been learning web development over the past three years. During my time at university, I've built a handful of projects for clasees, leisure, and my internship this last summer. 
+            I have a solid understanding of the fundamentals of web design/development and am now branching out to learn new technologies and frameworks. Take a look at what I've been working on below.
           </p>
         </div>
         <div class="chevronDown">
           <a href="#projects" class="hidden" id="nextPage">
-            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+            <img class="clickable" width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
           </a>
         </div>
       </section>
@@ -39,7 +37,7 @@
       <section class="" id="projects">
         <div class="chevronUp">
           <a href="#aboutMe">
-            <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
+            <img class="clickable" width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
           </a>
         </div>
         <div class="content grid">
@@ -58,7 +56,7 @@
                   session-based authentication, dynamic HTML web forms with email-based submission
                 </li>
               </ul>
-              <div class="projectLink"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
+              <div class="projectLink" id="openProjectFour"><img class="pulse clickable" width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
             </div>
             <div class="item" id="project3">
               <h2>Snapchat Data Visualizer</h2>
@@ -71,30 +69,29 @@
                   and storing it on a server.
                 </li>
               </ul>
-              <div class="projectLink" id="openProjectThree"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
+              <div class="projectLink" id="openProjectThree"><img class="pulse clickable" width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
             </div>
             <div class="item" id="project2">
               <h2>Web Design Midterm</h2>
               <ul>
                 <li>Made during freshman year at Univeristy</li>
-                <li>Purely HTML and CSS with use of flexbox, iframes, and @media controls for a responsive design.</li>
+                <li>Purely HTML and CSS with use of flexbox, iframes, and @media controls for a responsive design</li>
               </ul>
-              <div class="projectLink" id="openProjectTwo"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
+              <div class="projectLink" id="openProjectTwo"><img class="pulse clickable" width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
             </div>
             <div class="item" id="project1">
               <h2>First Website</h2>
               <ul>
                 <li>Made in Highschool for CSEC-102</li>
                 <li>Basic HTML and minimal CSS</li>
-                <li>The colors are a bit... harsh. Consider yourself warned.</li>
               </ul>
-              <div class="projectLink" id="openProjectOne"><img width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
+              <div class="projectLink" id="openProjectOne"><img class="pulse clickable" width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
             </div>
           </div>
         </div>
         <div class="chevronDown">
           <a href="#skills">
-            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+            <img class="clickable" width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
           </a>
         </div>
       </section>
@@ -102,7 +99,7 @@
       <section class="" id="skills">
         <div class="chevronUp">
           <a href="#projects">
-            <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
+            <img class="clickable" width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
           </a>
         </div>
         <div class="content">
@@ -153,7 +150,7 @@
         </div>
         <div class="chevronDown">
           <a href="#experience">
-            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+            <img class="clickable" width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
           </a>
         </div>
       </section>
@@ -161,7 +158,7 @@
       <section class="" id="experience">
         <div class="chevronUp">
           <a href="#skills">
-            <img width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
+            <img class="clickable" width="25" src="./public/images/chevron-up-solid.svg" alt="Prevous section" />
           </a>
         </div>
         <div class="content">
@@ -174,27 +171,27 @@
               <div id="organizations">
                 <div class="orgContainer">
                   <div class="orgText"><p>Guthmann Construction</p></div>
-                  <div class="org" id="guthmann"><img alt="Hammer" src="./public/images/hammer-solid.svg"></div>
+                  <div class="org clickable" id="guthmann"><img alt="Hammer" src="./public/images/hammer-solid.svg"></div>
                 </div>
                 <div class="orgContainer">
                   <div class="orgText"><p><span>Chick-fil-A</span></p></div>
-                  <div class="org" id="cfa"><img alt="Chick-fil-A Cow" src="./public/images/cow-regular.svg"></div>
+                  <div class="org clickable" id="cfa"><img alt="Chick-fil-A Cow" src="./public/images/cow-regular.svg"></div>
                 </div>
                 <div class="orgContainer">
                   <div class="orgText"><p>Campbell University</p></div>
-                  <div class="org" id="cu"><img alt="University" src="./public/images/graduation-cap-solid.svg"></div>
+                  <div class="org clickable pulse" id="cu"><img alt="University" src="./public/images/graduation-cap-solid.svg"></div>
                 </div>
                 <div class="orgContainer">
                   <div class="orgText"><p><span>SIM International</span></p></div>
-                  <div class="org" id="sim"><img alt="Virtual Classroom" src="./public/images/user-class-solid.svg"></div>
+                  <div class="org clickable" id="sim"><img alt="Virtual Classroom" src="./public/images/user-class-solid.svg"></div>
                 </div>
                 <div class="orgContainer">
                   <div class="orgText"><p>Dominos</p></div>
-                  <div class="org" id="dominos"><img alt="Pizza Slice" src="./public/images/pizza-slice-solid.svg"></div>
+                  <div class="org clickable" id="dominos"><img alt="Pizza Slice" src="./public/images/pizza-slice-solid.svg"></div>
                 </div>
                 <div class="orgContainer">
                   <div class="orgText"><p>Arzberger Stationers</p></div>
-                  <div class="org active" id="arz"><img alt="Code Symbol" src="./public/images/code-solid.svg"></div>
+                  <div class="org clickable active" id="arz"><img alt="Code Symbol" src="./public/images/code-solid.svg"></div>
                 </div>
               </div>
             </div>
@@ -250,7 +247,7 @@
         </div>
         <div class="chevronDown">
           <a href="#footer">
-            <img width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
+            <img class="clickable" width="25" src="./public/images/chevron-down-solid.svg" alt="Next section" />
           </a>
         </div>
       </section>
@@ -302,7 +299,7 @@
           </div> -->
         </div>
         <a id="scrollTop" href="#aboutMe">
-          <img width="25" src="./public/images/chevron-up-solid.svg" alt="Top of Page" />
+          <img class="clickable" width="25" src="./public/images/chevron-up-solid.svg" alt="Top of Page" />
         </a>
       </section>
     </div>
