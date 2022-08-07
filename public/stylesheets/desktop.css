@@ -173,6 +173,13 @@ span {
   background: #173e34;
 }
 
+#project5 {
+  /* background: #1e2630;
+  border: #66fcf1 solid 1px; */
+  background: rgb(102,252,241);
+  background: linear-gradient(142deg, rgba(102, 252, 242, 0.664) 0%, rgba(30,38,48,0.7609637605042017) 97%);
+}
+
 #footer {
   height: auto;
   padding: 2vh 2vw;

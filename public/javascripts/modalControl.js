@@ -116,3 +116,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   // dots[slideIndex-1].className += " active";
 }
+
+// Project 5
+var modalFive = document.getElementById("projectModalFive");
+var openFive = document.getElementById("openProjectFive");
+var closeFive = document.getElementById('closeProjectFive');
+
+openFive.onclick = function() {
+  if(intViewportWidth < 800){
+    window.open("https://www.figma.com/file/RTzAJXSHVBMZKDvvyksOEP/Personal-Portfolio-Mockup?node-id=0%3A1");
+  }else{
+    modalFive.style.display = "block";
+  }
+  openFive.childNodes[0].classList.remove('pulse');
+}
+
+closeFive.onclick = function() {
+  modalFive.style.display = "none";
+}

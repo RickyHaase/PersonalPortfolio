@@ -43,17 +43,26 @@
         <div class="content grid">
           <h1>Projects</h1>
           <div class="hs">
+            <div class="item" id="project5">
+              <h2>Portfolio Site Fall 2021</h2>
+              <ul>
+                <li>A project I enjoyed working on to create a portfolio site and to polish up my HTML, CSS, JS, and exercise my design skills.</li>
+                <li>The project began with sketching up some <a href="./public/assets/wireframe_portfolio_site.pdf"  target="_blank" rel="noopener">wireframes</a> and continued on to learning figma and fleshing out the <a href="https://www.figma.com/file/RTzAJXSHVBMZKDvvyksOEP/Personal-Portfolio-Mockup?node-id=0%3A1" target="_blank" rel="noopener">design</a> before getting down to writing the code.</li>
+                <li>Limited myself to using exclusively HTML, CSS, and JS written (mostly) from scratch without the use of any frameworks.</li>
+              </ul>
+              <div class="projectLink" id="openProjectFive"><img class="pulse clickable" width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
+            </div>
             <div class="item" id="project4">
               <h2>Representative Web Portal</h2>
               <ul>
-                <li>Project for web development internship between Junior and Senior years at university.</li>
+                <li>Project for web development internship between Junior and Senior years at university. It was more akin to a contract position than and internship and I delivered a completed project at the end wich is currently in production.</li>
                 <li>
                   Server-side page rendering, dynamic HTML Forms, Bootstrap, MS-SQL, nodeJS, expressJS, passportJS,
                   nodemailer, jQuery, etc.
                 </li>
                 <li>
                   Integrated with an existing order management system’s database, created an authentication system with
-                  session-based authentication, dynamic HTML web forms with email-based submission
+                  session-based authentication, dynamic HTML web forms with email-based submission.
                 </li>
               </ul>
               <div class="projectLink" id="openProjectFour"><img class="pulse clickable" width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
@@ -68,6 +77,7 @@
                   All data processing is handled in the front-end as to avoid sending a user’s sensitive user data
                   and storing it on a server.
                 </li>
+                <li>View project documentation <a href="./public/assets/Richard_Haase-Senior_Design_Project.pdf">here</a>.</li>
               </ul>
               <div class="projectLink" id="openProjectThree"><img class="pulse clickable" width="30" height="30" alt="Open Project" src="./public/images/plus-circle-solid.svg"></div>
             </div>
@@ -393,6 +403,22 @@
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+      </div>
+    </div>
+
+    <div id="projectModalFive" class="modal">
+      <div class="modal-content">
+        <div class="titlebar">
+          <div class="buttons">
+            <div class="minimize" id="closeProjectFive"></div>
+            <a href="./projects/snapDataVisualizer/index.html" target="_blank"><div class="zoom"></div></a>
+          </div>
+          <!-- <div class="title">Portfolio Site Wireframes</div> -->
+          <div class="title">Site-ception</div>
+          <div style="width: 44px;"></div>
+        </div>
+        <object class="siteShowcase" type="text/html" data="./index.html"></object>
+        <!-- <embed src="./public/assets/wireframe_portfolio_site.pdf" frameborder="0" width="100%" height="100%"> -->
       </div>
     </div>
   </div>
