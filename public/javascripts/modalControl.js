@@ -3,28 +3,28 @@ let intViewportWidth = window.innerWidth;
 
 // (W3 Schools)
 // Get the modal
-var modalOne = document.getElementById("projectModalOne");
+// var modalOne = document.getElementById("projectModalOne");
 
-// Get the button that opens the modal
-var openOne = document.getElementById("openProjectOne");
+// // Get the button that opens the modal
+// var openOne = document.getElementById("openProjectOne");
 
-// Get the element that closes the modal
-var closeOne = document.getElementById('closeProjectOne');
+// // Get the element that closes the modal
+// var closeOne = document.getElementById('closeProjectOne');
 
-// When the user clicks the button, open the modal 
-openOne.onclick = function() {
-  if(intViewportWidth < 800){
-    window.open("./projects/firstWebsite/home.html");
-  }else{
-    modalOne.style.display = "block";
-  }
-  openOne.childNodes[0].classList.remove('pulse');
-}
+// // When the user clicks the button, open the modal 
+// openOne.onclick = function() {
+//   if(intViewportWidth < 800){
+//     window.open("./projects/firstWebsite/home.html");
+//   }else{
+//     modalOne.style.display = "block";
+//   }
+//   openOne.childNodes[0].classList.remove('pulse');
+// }
 
-// When the user clicks on minimize button, close the modal
-closeOne.onclick = function() {
-  modalOne.style.display = "none";
-}
+// // When the user clicks on minimize button, close the modal
+// closeOne.onclick = function() {
+//   modalOne.style.display = "none";
+// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
